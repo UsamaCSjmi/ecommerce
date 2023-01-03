@@ -337,13 +337,100 @@
                             </div>
                         </div>
                     </div>
+                    <div class="item">
+                        <div class=" single-product w-100 flexbox col center">
+                            <div class="product-image-container">
+                                <img src="images/img1.webp" alt="Category Image">
+                                <div class="product-image-up">
+                                    <div class="image-border flexbox center">
+                                        <button onclick="productQuickView()" class="quick-view">Quick View</button>
+                                    </div>
+                                </div>
+                                <p class="product-tag">Sale</p>
+                            </div>
+                            <div class="product-description flexbox col center w-100">
+                                <p class="product-name">ANTIQUE BLACK GOLDEN CAMBER TRINKET WALL CLOCK</p>
+                                <p class="vendor-name">The decor shop</p>
+                                <div class="product-prices flexbox center w-100">
+                                    <p class="old-price">Rs. 7300</p>
+                                    <p class="new-price">Rs. 6800</p>
+                                </div>
+                                <p class="product-savings">Save 30%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class=" single-product w-100 flexbox col center">
+                            <div class="product-image-container">
+                                <img src="images/img1.webp" alt="Category Image">
+                                <div class="product-image-up">
+                                    <div class="image-border flexbox center">
+                                        <button onclick="productQuickView()" class="quick-view">Quick View</button>
+                                    </div>
+                                </div>
+                                <p class="product-tag">Sale</p>
+                            </div>
+                            <div class="product-description flexbox col center w-100">
+                                <p class="product-name">ANTIQUE BLACK GOLDEN CAMBER TRINKET WALL CLOCK</p>
+                                <p class="vendor-name">The decor shop</p>
+                                <div class="product-prices flexbox center w-100">
+                                    <p class="old-price">Rs. 7300</p>
+                                    <p class="new-price">Rs. 6800</p>
+                                </div>
+                                <p class="product-savings">Save 30%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class=" single-product w-100 flexbox col center">
+                            <div class="product-image-container">
+                                <img src="images/img1.webp" alt="Category Image">
+                                <div class="product-image-up">
+                                    <div class="image-border flexbox center">
+                                        <button onclick="productQuickView()" class="quick-view">Quick View</button>
+                                    </div>
+                                </div>
+                                <p class="product-tag">Sale</p>
+                            </div>
+                            <div class="product-description flexbox col center w-100">
+                                <p class="product-name">ANTIQUE BLACK GOLDEN CAMBER TRINKET WALL CLOCK</p>
+                                <p class="vendor-name">The decor shop</p>
+                                <div class="product-prices flexbox center w-100">
+                                    <p class="old-price">Rs. 7300</p>
+                                    <p class="new-price">Rs. 6800</p>
+                                </div>
+                                <p class="product-savings">Save 30%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class=" single-product w-100 flexbox col center">
+                            <div class="product-image-container">
+                                <img src="images/img1.webp" alt="Category Image">
+                                <div class="product-image-up">
+                                    <div class="image-border flexbox center">
+                                        <button onclick="productQuickView()" class="quick-view">Quick View</button>
+                                    </div>
+                                </div>
+                                <p class="product-tag">Sale</p>
+                            </div>
+                            <div class="product-description flexbox col center w-100">
+                                <p class="product-name">ANTIQUE BLACK GOLDEN CAMBER TRINKET WALL CLOCK</p>
+                                <p class="vendor-name">The decor shop</p>
+                                <div class="product-prices flexbox center w-100">
+                                    <p class="old-price">Rs. 7300</p>
+                                    <p class="new-price">Rs. 6800</p>
+                                </div>
+                                <p class="product-savings">Save 30%</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-
+                
             </div>
         </div>
         <div id="overlay" class="overlay flexbox center">
-            <div class="product-description-window flexbox ">
+            <div id="window" class="product-description-window flexbox ">
                 <button class="close-window" onclick="closeWindow()">X</button>
                 <div class="window-inner flexbox start-even text-left w-100">
                     <div class="product-sub-images flexbox col">
@@ -365,6 +452,60 @@
                             </div>
                             <p class="offers">PRICE INCLUDING TAX & FREE SHIPPING ALL OVER INDIA...! CASH ON DELIVERY AVAILABLE...! </p>
                             <hr>
+                            <p class="qty-label">quantity</p>
+                            <div class="quantity-bar flexbox">
+                                <span onclick="decreaseQty()"class="update-qty-btn">-</span>
+                                <input id="qty"class="quantity-input"type="text" value="1">
+                                <span onclick="increasQty()"class="update-qty-btn">+</span>
+                            </div>
+                            <div class="product-buttons w-100">
+                                <button onclick="addToCart()"class="btn btn-primary">Add To Cart</button>
+                                <button onclick="buyNow()"class="btn btn-secondary hover-shine">Buy It Now</button>
+                            </div>
+                            <p class="product-short-description">
+                                ANTIQUE METAL WALL CLOCK WITH GOLDEN FINISH
+                            </p>
+                            <p class="product-long-description">
+                                With The Help Of This Trinket Wall Clock, You Can Demonstrate Your Love For Antique Items While Also Giving Them A Touch Of Modernity. It Has A Quartz Movement, Roman And Conventional Numerals, And A Distressed Black Finish. The Ideal Timepiece For Any Space, It Will Add A Touch Of Vintage Charm To Your House.
+                            </p>
+                            <p id="product-size" class="detail">Size : 24 INCH in Diameter</p>
+                            <p id="product-material" class="detail ">Material : Metal</p>
+                            <p id="product-finish" class="detail ">Finish : Antique</p>
+                            <p class="detail warranty">ONE YEAR WARRANTY ON MOVEMENT MACHINE</p>
+                            <p class="ready-time">As We Make Fresh Piece-Dispatch Within 3 TO 5 Days...!</p>
+                            <div class="ask-us-outer flexbox col center collapsible w-100">
+                                <button onclick="collapseForm()" class="collapse-form-btn btn w-100">
+                                    Ask a question
+                                    <div class="up-down-btn">
+                                        <img id="arrowBtn" src="icons/arrow.svg" alt="">
+                                    </div>
+                                </button>
+                                <div id="ask-us-inner" class="ask-us-inner container">
+                                    <form action="#" class="ask-us w-100 flexbox col start-even">
+                                        <div class="flexbox input-row w-100">
+                                            <div class="input-item flexbox col start-even">
+                                                <label for="name">Name</label>
+                                                <input type="text" name="name" id="name" >
+                                            </div>
+                                            <div class="input-item flexbox col start-even">
+                                                <label for="email">Email</label>
+                                                <input type="email" id="email" >
+                                            </div>
+                                        </div>
+                                        <div class="input-item flexbox col start-even">
+                                            <label for="mobile">Phone number</label>
+                                            <input type="text" id="mobile">
+                                        </div>
+                                        <div class="input-item flexbox col start-even">
+                                            <label for="message">Message</label>
+                                            <textarea name="message" id="" rows="5"></textarea>
+                                        </div>
+                                        <div class="input-item w-100">
+                                            <input type="submit" class="btn btn-secondary hover-shine" value="Send">    
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

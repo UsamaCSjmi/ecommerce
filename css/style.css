@@ -8,6 +8,9 @@
     color: #fff;
     background-color: #0f0f0f;
 }
+input:focus,input:active,textarea:focus,textarea:active{
+    outline: 1px solid#0f0f0f;
+}
 body{    
 
     font-family: 'Quicksand', sans-serif;
@@ -510,4 +513,174 @@ width: 100%;
 height: 1px;
 background-color: #00000017;
 border: none;
+}
+.update-qty-btn{
+    /* height: 40px; */
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #00000028;
+    line-height: 50px;
+    padding: 0 8px;
+    font-size: 20px;
+}
+.quantity-input{
+    font-size: 16px;
+    text-align: center;
+    line-height: 50px;
+    /* height: 40px; */
+    width: 60px;
+    border: none;
+    border-bottom: 1px solid #00000028;
+    border-top: 1px solid #00000028;
+
+}
+.qty-label{
+    letter-spacing: 2px;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin: 10px 0px;
+}
+.product-buttons > button{
+    margin: 20px 0;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.btn{
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+    background: none;
+}
+.btn-primary{
+    border: 1px solid #0f0f0f;
+    color: #0f0f0f;
+    background: #fff;
+    transition: all 0.3s ease-in-out;
+}
+.btn-primary:hover{
+    transition: all 0.3s ease-in-out;
+    border: 1px solid #fff;
+    color: #fff;
+    background: #0f0f0f;
+}
+.btn-secondary{
+    border: 1px solid #0f0f0f;
+    color: #fff;
+    background: #0f0f0f;
+    transition: all 0.3s ease-in-out;
+}
+.hover-shine::after{
+    content: "";
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    right: -150%;
+    background-image: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.25), transparent); 
+    height: 100%;
+    rotate: skewY(-20deg);
+    width: 150%;
+    transition: all 1s ease-in-out;
+}
+.hover-shine:hover::after{
+    right: 150%;
+    transition: all 1s ease-in-out;
+}
+.product-short-description{
+    letter-spacing: 2px;
+    font-size: 18px;
+
+}
+.product-long-description{
+    margin: 20px 0;
+    line-height: 25px;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+.detail{
+    /* font-size: 15px; */
+    line-height: 50px;
+}
+.warranty{
+    line-height: 50px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.ready-time{
+    line-height: 50px;
+    font-weight: bold;
+    text-decoration: underline;
+
+}
+.ask-us-outer{
+    border: 1px solid #00000028;
+    margin: 20px 0;
+    padding: 20px 0;
+    height: auto;
+    transition: all 0.5s ease-in-out;
+}
+.collapse-form-btn{
+    letter-spacing: 3px;
+    font-weight: 300;
+}
+.up-down-btn{
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    z-index: 10;
+}
+#arrowBtn{
+    width:10px;
+    transform: rotate(0deg);
+    transition: transform 0.5s ease-in-out;
+}
+.arrowBtnUp{
+    transform: rotate(180deg)!important;
+    transition: transform 0.5s ease-in-out;
+}
+
+.ask-us-inner{
+    overflow: hidden;
+    height: 0;
+    transition: all 0.5s ease-in-out;
+}
+.ask-us{
+    transform: translateY(50px);
+    transition: all 0.5s ease-in-out;
+}
+.form-open{
+    height:auto;
+    transition: all 0.5s ease-in-out;
+}
+.form-open .ask-us{
+    transform: translateY(0);
+    transition: all 0.5s ease-in-out;
+}
+.ask-us > .input-item{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.input-item > input, .input-item > textarea{
+    width: 100%;
+    border: 1px solid #00000028;
+    padding: 8px 10px;
+    font-size: 16px;
+    line-height: 32px;
+}
+.input-item > label{
+    text-transform: uppercase;
+    font-size: 12px;
+    /* color: #000; */
+    /* font-weight: bold; */
+    margin: 10px 0;
+}
+.input-row > .input-item{
+ width: 50%;
+ margin-right: 10px;
 }
