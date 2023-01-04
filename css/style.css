@@ -684,3 +684,86 @@ border: none;
  width: 50%;
  margin-right: 10px;
 }
+.pink-background{
+    background: rgba(214, 147, 68, 0.16);
+}
+.information-bar{
+    margin: 50px 0;
+    padding: 16px;
+}
+.price-n-delivery-info{
+    line-height: 80px;
+    text-transform: uppercase;
+    border: 1px solid #0f0f0f;
+}
+.main-tagline{
+    margin-right: 30px;
+    font-size: 30px;
+    font-weight: 400;
+}
+.sub-tagline{
+    font-size: 16px;
+}
+.promo-section{
+    position: relative;
+    height: 75vh;
+    overflow-y: hidden;
+}
+.promo-section > img{
+    /* position: absolute; */
+    width: 100%;
+}
+.promo-box{
+    position: absolute;
+    top: 50px;
+    width: 380px;
+    right: 50px;
+    z-index: 10;
+    background: #fff;
+    padding: 10px;
+}
+.promo-content{
+    text-align: left;
+    padding: 20px;
+    border: 2px solid #000;
+}
+.promo-content h4{
+    letter-spacing: 2px;
+    font-weight: 401;
+    line-height: 3;
+    font-size: 15px;
+}
+.promo-content h2{
+    line-height: 2;
+    font-size: 30px;
+    font-weight: 500;
+}
+.promo-content .btn{
+    width: inherit;
+    padding: 7px 12px;
+    letter-spacing: 2px;
+    font-size: 14px;
+    margin-top: 20px;
+}
+.promo-deal{
+    font-size: 16px;
+    letter-spacing: 2px;
+    line-height: 32px;
+}
+.about-us{
+    line-height: 40px;
+    font-size: 15px;
+    text-align: left;
+    margin: 50px 0;
+    font-weight: 401;
+}
+.about-us h1{
+    line-height: 100px;
+    font-weight: 500;
+}
+.about-us ul{
+    margin-left: 50px;
+}
+.about-us li{
+    list-style: disc;
+}
