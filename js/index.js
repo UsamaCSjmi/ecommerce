@@ -1,3 +1,5 @@
+
+
 function showSearch(){
     document.getElementById("searchPanel").style.visibility="visible";
 }

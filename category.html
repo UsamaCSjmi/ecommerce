@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">       
+        <link rel="shortcut icon" href="./images/d_white.png" type="image/x-icon">
+        <link rel="stylesheet" href="./css/style.css">
+        
+        <title>The Decor Shop</title>
+    </head>
+    <body >
+        <div class="site-wrapper flexbox col center w-100">
+            <div class="siteHeader">
+                <div class="w-100">
+                    <div class="topbar">
+                        <a href="/" class="announcements">
+                            <span>Made in India | Cash on delivery available |</span>
+                            <span>&nbsp Enjoy free shipping all over india</span>
+                        </a>
+                    </div>
+                    <div class="toolbar w-100">
+                        <div class="toolbar-list">
+                            <div class="toolbar-item">
+                                <ul class="social-items">
+                                    <li>
+                                        <a class="flexbox center" href="https://www.instagram.com/" target="_blank">
+                                            <img class="icon icon1" src="icons/instagram.svg" alt="india">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="flexbox center" href="https://www.instagram.com/" target="_blank">
+                                            <img class="icon icon2" src="icons/facebook-f.svg" alt="india">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="flexbox center"href="https://www.instagram.com/" target="_blank">
+                                            <img class="icon icon3" src="icons/twitter.svg" alt="india">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="flexbox center"href="https://www.instagram.com/" target="_blank">
+                                            <img class="icon icon4" src="icons/pinterest-p.svg" alt="india">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="toolbar-item">
+                                <div class="currency flexbox center">
+                                    <div class="flag">
+                                        <img src="icons/flag.jpg" alt="india">
+                                    </div>
+                                    <div class="country">INR</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <header class="w-100 flexbox center">
+                    <div class="container flexbox center col navHead">
+                        <nav class="w-100">
+                            <div class="w-100 flexbox equal topNav">
+                                <div class="left-inner-head flexbox center">
+                                    <div class="menu-button"> 
+                                        <div class="menubtn">
+                                            <hr class="line line1">
+                                            <hr class="line line2">
+                                            <hr class="line line3">
+                                        </div>
+                                    </div>
+                                    <div onclick="showSearch()" class="search navbarIcon">
+                                        <img src="icons/search.svg" alt="search">
+                                    </div>
+                                </div>
+                                <div class="mid-inner-head flexbox center">
+                                    <a href="index.html">
+                                        <div class="logo">
+                                            <img class="logo-image"src="./images/d_white.png" alt="logo">
+                                            <p class="logo-head">DECOR</p>
+                                            <p class="logo-para">SHOP</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="right-inner-head flexbox center">
+                                    <div class="user navbarIcon">
+                                        <img src="icons/user.svg" alt="user">
+                                    </div>
+                                    <div class="cart navbarIcon cartIcon">
+                                        <img src="icons/cart.svg" alt="cart">
+                                    </div>
+                                </div>
+                            </div>
+                            <ul id="mainNavigation text-left">
+                                <li class="navItem hasNav">
+                                    <a class="navLink" href="/">Paintings</a>
+                                    <ul class="subNavigation text-left">
+                                        <li class="subNavItem">
+                                            <a class="subNavLink" href="/">Item Item</a>
+                                        </li>
+                                        <li class="subNavItem">
+                                            <a class="subNavLink" href="/">Item</a>
+                                        </li>
+                                        <li class="subNavItem">
+                                            <a class="subNavLink" href="/">Item</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="navItem">
+                                    <a class="navLink" href="/">Artifacts</a>
+                                </li>
+                                <li class="navItem hasNav">
+                                    <a class="navLink" href="/">Paintings</a>
+                                    <ul class="subNavigation text-left">
+                                        <li class="subNavItem">
+                                            <a class="subNavLink" href="/">Item Item</a>
+                                        </li>
+                                        <li class="subNavItem">
+                                            <a class="subNavLink" href="/">Item</a>
+                                        </li>
+                                        <li class="subNavItem">
+                                            <a class="subNavLink" href="/">Item</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="navItem">
+                                    <a class="navLink" href="/">Wall Arts</a>
+                                </li>
+                                <li class="navItem hasNav">
+                                    <a class="navLink" href="/">Mirror</a>
+                                    <ul class="subNavigation text-left">
+                                        <li class="subNavItem">
+                                            <a class="subNavLink" href="/">Item Item</a>
+                                        </li>
+                                        <li class="subNavItem">
+                                            <a class="subNavLink" href="/">Item</a>
+                                        </li>
+                                        <li class="subNavItem">
+                                            <a class="subNavLink" href="/">Item</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="navItem">
+                                    <a class="navLink" href="/">Table Decor </a>
+                                </li>
+                                <li class="navItem hasNav">
+                                    <a class="navLink" href="/">Lightning</a>
+                                    <ul class="subNavigation text-left">
+                                        <li class="subNavItem">
+                                            <a class="subNavLink" href="/">Item Item</a>
+                                        </li>
+                                        <li class="subNavItem">
+                                            <a class="subNavLink" href="/">Item</a>
+                                        </li>
+                                        <li class="subNavItem">
+                                            <a class="subNavLink" href="/">Item</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="navItem">
+                                    <a class="navLink" href="/">Center Tables</a>
+                                </li>
+                                <li class="navItem hasNav">
+                                    <a class="navLink" href="/">Console Tables</a>
+                                    <ul class="subNavigation text-left">
+                                        <li class="subNavItem">
+                                            <a class="subNavLink" href="/">Item Item</a>
+                                        </li>
+                                        <li class="subNavItem">
+                                            <a class="subNavLink" href="/">Item</a>
+                                        </li>
+                                        <li class="subNavItem">
+                                            <a class="subNavLink" href="/">Item</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="navItem">
+                                    <a class="navLink" href="/">Home Furnishing</a>
+                                </li>
+                                <li class="navItem hasNav">
+                                    <a class="navLink" href="/">Metal Wall Decor</a>
+                                    <ul class="subNavigation text-left">
+                                        <li class="subNavItem">
+                                            <a class="subNavLink" href="/">Item Item</a>
+                                        </li>
+                                        <li class="subNavItem">
+                                            <a class="subNavLink" href="/">Item</a>
+                                        </li>
+                                        <li class="subNavItem">
+                                            <a class="subNavLink" href="/">Item</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>                    
+                        </nav>
+                    </div>
+                    <div id="searchPanel"class="siteSearchPanel flexbox center w-100">
+                        <div class="container">
+                            <div class="w-100 flexbox equal topNav">
+                                <div class="left-inner-head flexbox center">
+                                    <div class="search navbarIcon">
+                                        <img src="icons/search.svg" alt="search">
+                                    </div>
+                                </div>
+                                <div class="mid-inner-head">
+                                    <div class="searchInput w-100">
+                                        <input type="text" placeholder="Search Here ...">
+                                    </div>
+                                </div>
+                                <div class="right-inner-head flexbox center">
+                                    <div class="close navbarIcon" onclick="closeSearch()">
+                                        <img src="icons/close.svg" alt="close">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+            </div>
+
+            <div class="site-grid categories-page-grid">
+                <div class="item">
+                    <div class="side-menu flexbox col start">
+                        <button onclick="showMenu()" class="collapse-form-btn btn w-100">
+                            Main Menu
+                            <div class="up-down-btn">
+                                <img id="arrowBtn" src="icons/arrow.svg" alt="">
+                            </div>
+                        </button>
+                        <div class="side-main-menu w-100">
+                            <ul class="menu-categories w-100 flexbox col start">
+                                <li class="navItem">
+                                    <a class="navLink" href="category.html">Paintings</a>
+                                    <ul class="subNav text-left">
+                                        <li class="subNavItem">
+                                            <a class="subNavLink" href="category.html">Special Paintings</a>
+                                        </li>
+                                        <li class="subNavItem">
+                                            <a class="navLink" href="category.html">Glass Paintings</a>
+                                        </li>
+                                        <li class="subNavItem">
+                                            <a class="navLink" href="category.html">Metal Art Paintings</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="navItem">
+                                    <a class="navLink" href="category.html">Artifacts</a>
+                                </li>
+                                <li class="navItem">
+                                    <a class="navLink" href="category.html">Paintings</a>
+                                    <ul class="subNav text-left">
+                                        <li class="subNavItem">
+                                            <a class="subNavLink" href="category.html">Special Paintings</a>
+                                        </li>
+                                        <li class="subNavItem">
+                                            <a class="navLink" href="category.html">Glass Paintings</a>
+                                        </li>
+                                        <li class="subNavItem">
+                                            <a class="navLink" href="category.html">Metal Art Paintings</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="navItem">
+                                    <a class="navLink" href="category.html">Artifacts</a>
+                                </li>
+                                <li class="navItem">
+                                    <a class="navLink" href="category.html">Paintings</a>
+                                    <ul class="subNav text-left">
+                                        <li class="subNavItem">
+                                            <a class="subNavLink" href="category.html">Special Paintings</a>
+                                        </li>
+                                        <li class="subNavItem">
+                                            <a class="navLink" href="category.html">Glass Paintings</a>
+                                        </li>
+                                        <li class="subNavItem">
+                                            <a class="navLink" href="category.html">Metal Art Paintings</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="navItem">
+                                    <a class="navLink" href="category.html">Artifacts</a>
+                                </li>
+                                <li class="navItem">
+                                    <a class="navLink" href="category.html">Paintings</a>
+                                    <ul class="subNav text-left">
+                                        <li class="subNavItem">
+                                            <a class="subNavLink" href="category.html">Special Paintings</a>
+                                        </li>
+                                        <li class="subNavItem">
+                                            <a class="navLink" href="category.html">Glass Paintings</a>
+                                        </li>
+                                        <li class="subNavItem">
+                                            <a class="navLink" href="category.html">Metal Art Paintings</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="navItem">
+                                    <a class="navLink" href="category.html">Artifacts</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="container flexbox col center">
+                        <div class="site-heading-simple w-100 flexbox center">
+                            <h1>paintings</h1>
+                        </div>
+                        <!-- categories grid -->
+                        <div class="categories site-grid grid-4 w-100">
+                            <div class="item">
+                                <a href="category.html">
+                                <div class="single-category w-100 flexbox center">
+                                    <img src="images/img1.webp" alt="Category Image">
+                                    <p class="category-name w-100">Paintings</p>
+                                </div>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="category.html">
+                                    <div class="single-category w-100 flexbox center">
+                                        <img src="images/img9.webp" alt="Category Image">
+                                        <p class="category-name w-100">Artifacts</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="category.html">
+                                    <div class="single-category w-100 flexbox center">
+                                        <img src="images/img1.webp" alt="Category Image">
+                                        <p class="category-name w-100">wall arts</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="category.html">
+                                    <div class="single-category w-100 flexbox center">
+                                        <img src="images/img10.jpg" alt="Category Image">
+                                        <p class="category-name w-100">mirrors</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="category.html">
+                                    <div class="single-category w-100 flexbox center">
+                                        <img src="images/img4.webp" alt="Category Image">
+                                        <p class="category-name w-100">table decors</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="category.html">
+                                    <div class="single-category w-100 flexbox center">
+                                        <img src="images/img5.webp" alt="Category Image">
+                                        <p class="category-name w-100">lights</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+        
+                        <div class="site-heading-simple w-100 flexbox center">
+                            <h1>All Paintings</h1>
+                        </div>
+        
+                        <!-- products grid -->
+                        <div class="categories site-grid grid-3 w-100">
+                            <div class="item">
+                                <a href="product.html">
+                                    <div class=" single-product w-100 flexbox col center">
+                                        <div class="product-image-container">
+                                            <img src="images/img1.webp" alt="Category Image">
+                                            <div class="product-image-up flexbox center">
+                                                <button onclick="productQuickView()" class="quick-view">Quick View</button>
+                                            </div>
+                                            <p class="product-tag">Sale</p>
+                                        </div>
+                                        <div class="product-description flexbox col center w-100">
+                                            <p class="product-name">ANTIQUE BLACK GOLDEN CAMBER TRINKET WALL CLOCK</p>
+                                            <p class="vendor-name">The decor shop</p>
+                                            <div class="product-prices flexbox center w-100">
+                                                <p class="old-price">Rs. 7300</p>
+                                                <p class="new-price">Rs. 6800</p>
+                                            </div>
+                                            <p class="product-savings">Save 30%</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="product.html">
+                                    <div class=" single-product w-100 flexbox col center">
+                                        <div class="product-image-container">
+                                            <img src="images/img4.webp" alt="Category Image">
+                                            <div class="product-image-up flexbox center">
+                                                <button onclick="productQuickView()" class="quick-view">Quick View</button>
+                                            </div>
+                                            <p class="product-tag">Sale</p>
+                                        </div>
+                                        <div class="product-description flexbox col center w-100">
+                                            <p class="product-name">ANTIQUE BLACK GOLDEN CAMBER TRINKET WALL CLOCK</p>
+                                            <p class="vendor-name">The decor shop</p>
+                                            <div class="product-prices flexbox center w-100">
+                                                <p class="old-price">Rs. 7300</p>
+                                                <p class="new-price">Rs. 6800</p>
+                                            </div>
+                                            <p class="product-savings">Save 30%</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="product.html">
+                                    <div class=" single-product w-100 flexbox col center">
+                                        <div class="product-image-container">
+                                            <img src="images/img5.webp" alt="Category Image">
+                                            <div class="product-image-up flexbox center">
+                                                <button onclick="productQuickView()" class="quick-view">Quick View</button>
+                                            </div>
+                                            <p class="product-tag">Sale</p>
+                                        </div>
+                                        <div class="product-description flexbox col center w-100">
+                                            <p class="product-name">ANTIQUE BLACK GOLDEN CAMBER TRINKET WALL CLOCK</p>
+                                            <p class="vendor-name">The decor shop</p>
+                                            <div class="product-prices flexbox center w-100">
+                                                <p class="old-price">Rs. 7300</p>
+                                                <p class="new-price">Rs. 6800</p>
+                                            </div>
+                                            <p class="product-savings">Save 30%</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="product.html">
+                                    <div class=" single-product w-100 flexbox col center">
+                                        <div class="product-image-container">
+                                            <img src="images/img6.webp" alt="Category Image">
+                                            <div class="product-image-up flexbox center">
+                                                <button onclick="productQuickView()" class="quick-view">Quick View</button>
+                                            </div>
+                                            <p class="product-tag">Sale</p>
+                                        </div>
+                                        <div class="product-description flexbox col center w-100">
+                                            <p class="product-name">ANTIQUE BLACK GOLDEN CAMBER TRINKET WALL CLOCK</p>
+                                            <p class="vendor-name">The decor shop</p>
+                                            <div class="product-prices flexbox center w-100">
+                                                <p class="old-price">Rs. 7300</p>
+                                                <p class="new-price">Rs. 6800</p>
+                                            </div>
+                                            <p class="product-savings">Save 30%</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="product.html">
+                                    <div class=" single-product w-100 flexbox col center">
+                                        <div class="product-image-container">
+                                            <img src="images/img1.webp" alt="Category Image">
+                                            <div class="product-image-up flexbox center">
+                                                <button onclick="productQuickView()" class="quick-view">Quick View</button>
+                                            </div>
+                                            <p class="product-tag">Sale</p>
+                                        </div>
+                                        <div class="product-description flexbox col center w-100">
+                                            <p class="product-name">ANTIQUE BLACK GOLDEN CAMBER TRINKET WALL CLOCK</p>
+                                            <p class="vendor-name">The decor shop</p>
+                                            <div class="product-prices flexbox center w-100">
+                                                <p class="old-price">Rs. 7300</p>
+                                                <p class="new-price">Rs. 6800</p>
+                                            </div>
+                                            <p class="product-savings">Save 30%</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="product.html">
+                                    <div class=" single-product w-100 flexbox col center">
+                                        <div class="product-image-container">
+                                            <img src="images/img1.webp" alt="Category Image">
+                                            <div class="product-image-up flexbox center">
+                                                <button onclick="productQuickView()" class="quick-view">Quick View</button>
+                                            </div>
+                                            <p class="product-tag">Sale</p>
+                                        </div>
+                                        <div class="product-description flexbox col center w-100">
+                                            <p class="product-name">ANTIQUE BLACK GOLDEN CAMBER TRINKET WALL CLOCK</p>
+                                            <p class="vendor-name">The decor shop</p>
+                                            <div class="product-prices flexbox center w-100">
+                                                <p class="old-price">Rs. 7300</p>
+                                                <p class="new-price">Rs. 6800</p>
+                                            </div>
+                                            <p class="product-savings">Save 30%</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="product.html">
+                                    <div class=" single-product w-100 flexbox col center">
+                                        <div class="product-image-container">
+                                            <img src="images/img4.webp" alt="Category Image">
+                                            <div class="product-image-up flexbox center">
+                                                <button onclick="productQuickView()" class="quick-view">Quick View</button>
+                                            </div>
+                                            <p class="product-tag">Sale</p>
+                                        </div>
+                                        <div class="product-description flexbox col center w-100">
+                                            <p class="product-name">ANTIQUE BLACK GOLDEN CAMBER TRINKET WALL CLOCK</p>
+                                            <p class="vendor-name">The decor shop</p>
+                                            <div class="product-prices flexbox center w-100">
+                                                <p class="old-price">Rs. 7300</p>
+                                                <p class="new-price">Rs. 6800</p>
+                                            </div>
+                                            <p class="product-savings">Save 30%</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="product.html">
+                                    <div class=" single-product w-100 flexbox col center">
+                                        <div class="product-image-container">
+                                            <img src="images/img5.webp" alt="Category Image">
+                                            <div class="product-image-up flexbox center">
+                                                <button onclick="productQuickView()" class="quick-view">Quick View</button>
+                                            </div>
+                                            <p class="product-tag">Sale</p>
+                                        </div>
+                                        <div class="product-description flexbox col center w-100">
+                                            <p class="product-name">ANTIQUE BLACK GOLDEN CAMBER TRINKET WALL CLOCK</p>
+                                            <p class="vendor-name">The decor shop</p>
+                                            <div class="product-prices flexbox center w-100">
+                                                <p class="old-price">Rs. 7300</p>
+                                                <p class="new-price">Rs. 6800</p>
+                                            </div>
+                                            <p class="product-savings">Save 30%</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="product.html">
+                                    <div class=" single-product w-100 flexbox col center">
+                                        <div class="product-image-container">
+                                            <img src="images/img6.webp" alt="Category Image">
+                                            <div class="product-image-up flexbox center">
+                                                <button onclick="productQuickView()" class="quick-view">Quick View</button>
+                                            </div>
+                                            <p class="product-tag">Sale</p>
+                                        </div>
+                                        <div class="product-description flexbox col center w-100">
+                                            <p class="product-name">ANTIQUE BLACK GOLDEN CAMBER TRINKET WALL CLOCK</p>
+                                            <p class="vendor-name">The decor shop</p>
+                                            <div class="product-prices flexbox center w-100">
+                                                <p class="old-price">Rs. 7300</p>
+                                                <p class="new-price">Rs. 6800</p>
+                                            </div>
+                                            <p class="product-savings">Save 30%</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="product.html">
+                                    <div class=" single-product w-100 flexbox col center">
+                                        <div class="product-image-container">
+                                            <img src="images/img1.webp" alt="Category Image">
+                                            <div class="product-image-up flexbox center">
+                                                <button onclick="productQuickView()" class="quick-view">Quick View</button>
+                                            </div>
+                                            <p class="product-tag">Sale</p>
+                                        </div>
+                                        <div class="product-description flexbox col center w-100">
+                                            <p class="product-name">ANTIQUE BLACK GOLDEN CAMBER TRINKET WALL CLOCK</p>
+                                            <p class="vendor-name">The decor shop</p>
+                                            <div class="product-prices flexbox center w-100">
+                                                <p class="old-price">Rs. 7300</p>
+                                                <p class="new-price">Rs. 6800</p>
+                                            </div>
+                                            <p class="product-savings">Save 30%</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="product.html">
+                                    <div class=" single-product w-100 flexbox col center">
+                                        <div class="product-image-container">
+                                            <img src="images/img1.webp" alt="Category Image">
+                                            <div class="product-image-up flexbox center">
+                                                <button onclick="productQuickView()" class="quick-view">Quick View</button>
+                                            </div>
+                                            <p class="product-tag">Sale</p>
+                                        </div>
+                                        <div class="product-description flexbox col center w-100">
+                                            <p class="product-name">ANTIQUE BLACK GOLDEN CAMBER TRINKET WALL CLOCK</p>
+                                            <p class="vendor-name">The decor shop</p>
+                                            <div class="product-prices flexbox center w-100">
+                                                <p class="old-price">Rs. 7300</p>
+                                                <p class="new-price">Rs. 6800</p>
+                                            </div>
+                                            <p class="product-savings">Save 30%</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="product.html">
+                                    <div class=" single-product w-100 flexbox col center">
+                                        <div class="product-image-container">
+                                            <img src="images/img4.webp" alt="Category Image">
+                                            <div class="product-image-up flexbox center">
+                                                <button onclick="productQuickView()" class="quick-view">Quick View</button>
+                                            </div>
+                                            <p class="product-tag">Sale</p>
+                                        </div>
+                                        <div class="product-description flexbox col center w-100">
+                                            <p class="product-name">ANTIQUE BLACK GOLDEN CAMBER TRINKET WALL CLOCK</p>
+                                            <p class="vendor-name">The decor shop</p>
+                                            <div class="product-prices flexbox center w-100">
+                                                <p class="old-price">Rs. 7300</p>
+                                                <p class="new-price">Rs. 6800</p>
+                                            </div>
+                                            <p class="product-savings">Save 30%</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="product.html">
+                                    <div class=" single-product w-100 flexbox col center">
+                                        <div class="product-image-container">
+                                            <img src="images/img5.webp" alt="Category Image">
+                                            <div class="product-image-up flexbox center">
+                                                <button onclick="productQuickView()" class="quick-view">Quick View</button>
+                                            </div>
+                                            <p class="product-tag">Sale</p>
+                                        </div>
+                                        <div class="product-description flexbox col center w-100">
+                                            <p class="product-name">ANTIQUE BLACK GOLDEN CAMBER TRINKET WALL CLOCK</p>
+                                            <p class="vendor-name">The decor shop</p>
+                                            <div class="product-prices flexbox center w-100">
+                                                <p class="old-price">Rs. 7300</p>
+                                                <p class="new-price">Rs. 6800</p>
+                                            </div>
+                                            <p class="product-savings">Save 30%</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="product.html">
+                                    <div class=" single-product w-100 flexbox col center">
+                                        <div class="product-image-container">
+                                            <img src="images/img6.webp" alt="Category Image">
+                                            <div class="product-image-up flexbox center">
+                                                <button onclick="productQuickView()" class="quick-view">Quick View</button>
+                                            </div>
+                                            <p class="product-tag">Sale</p>
+                                        </div>
+                                        <div class="product-description flexbox col center w-100">
+                                            <p class="product-name">ANTIQUE BLACK GOLDEN CAMBER TRINKET WALL CLOCK</p>
+                                            <p class="vendor-name">The decor shop</p>
+                                            <div class="product-prices flexbox center w-100">
+                                                <p class="old-price">Rs. 7300</p>
+                                                <p class="new-price">Rs. 6800</p>
+                                            </div>
+                                            <p class="product-savings">Save 30%</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="product.html">
+                                    <div class=" single-product w-100 flexbox col center">
+                                        <div class="product-image-container">
+                                            <img src="images/img1.webp" alt="Category Image">
+                                            <div class="product-image-up flexbox center">
+                                                <button onclick="productQuickView()" class="quick-view">Quick View</button>
+                                            </div>
+                                            <p class="product-tag">Sale</p>
+                                        </div>
+                                        <div class="product-description flexbox col center w-100">
+                                            <p class="product-name">ANTIQUE BLACK GOLDEN CAMBER TRINKET WALL CLOCK</p>
+                                            <p class="vendor-name">The decor shop</p>
+                                            <div class="product-prices flexbox center w-100">
+                                                <p class="old-price">Rs. 7300</p>
+                                                <p class="new-price">Rs. 6800</p>
+                                            </div>
+                                            <p class="product-savings">Save 30%</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="footer w-100 flexbox col center">
+                <footer class="footer-grid w-100">
+                    <div class="footer-grid-item footer-main-menu flexbox col start">
+                        <p class="footer-heading">main menu</p>
+                        <div class="footer-navigation">
+                            <ul class="flexbox col start">
+                                <li><a href="#">Paintings</a></li>
+                                <li><a href="#">Artifacts</a></li>
+                                <li><a href="#">Wall Arts</a></li>
+                                <li><a href="#">Mirrors</a></li>
+                                <li><a href="#">Table Decor</a></li>
+                                <li><a href="#">Lights</a></li>
+                                <li><a href="#">Center Tables</a></li>
+                                <li><a href="#">Console Tables</a></li>
+                                <li><a href="#">Home Furnishing</a></li>
+                                <li><a href="#">Metal Wall Decor</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-grid-item footer-briefs flexbox col start">
+                        <p class="footer-heading">briefs</p>
+                        <div class="footer-navigation">
+                            <ul class="flexbox col start">
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="#">Reach Us</a></li>
+                                <li><a href="#">Journals</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-grid-item footer-policies flexbox col start">
+                        <p class="footer-heading">poliocies</p>
+                        <div class="footer-navigation">
+                            <ul class="flexbox col start">
+                                <li><a href="#">Return, Refund, Cancellation & Exchange Policy </a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms Of Service</a></li>
+                                <li><a href="#">Shipping Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-grid-item footer-subscription flexbox col start">
+                        <p class="footer-heading">gET in touch</p>
+                        <div class="footer-navigation">
+                            <ul class="flexbox col start contact-list">
+                                <li>The Decor Shop</li>
+                                <li>H-No. 5, Asalat Ganj, Choti Mandi, Moradabad U.P. - India</li>
+                                <li>Contact : +91-8171475514</li>
+                                <li>Email : info@startechworld.com</li>
+                                <li class="flexbox start w-100">
+                                    <a class="flexbox center" href="https://www.instagram.com/" target="_blank">
+                                        <img class="icon icon1" src="icons/instagram.svg" alt="india">
+                                    </a>
+                                    <a class="flexbox center" href="https://www.instagram.com/" target="_blank">
+                                        <img class="icon icon2" src="icons/facebook-f.svg" alt="india">
+                                    </a>
+                                    <a class="flexbox center"href="https://www.instagram.com/" target="_blank">
+                                        <img class="icon icon3" src="icons/twitter.svg" alt="india">
+                                    </a>
+                                    <a class="flexbox center"href="https://www.instagram.com/" target="_blank">
+                                        <img class="icon icon4" src="icons/pinterest-p.svg" alt="india">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </footer>
+                <a href="">
+                    <div class="logo">
+                        <img class="logo-image"src="./images/d_white.png" alt="logo">
+                        <p class="logo-head">DECOR</p>
+                        <p class="logo-para">SHOP</p>
+                    </div>
+                </a>
+                <div class="sponsership w-100 flexbox center">
+                    <p class="company">&copy; The Decor Shop</p>
+                    <p class="company">&nbsp;|&nbsp; Powered By : &nbsp;</p>
+                    <a href="https://startechworld.com/" target="_blank">StarTech World</a>
+                </div>
+            </div>
+        </div>
+        <div id="overlay" class="overlay flexbox center">
+            <div id="window" class="product-description-window flexbox ">
+                <button class="close-window" onclick="closeWindow()">X</button>
+                <div class="window-inner flexbox start-even text-left w-100">
+                    <div class="product-sub-images flexbox col">
+                        <img id="1" class="active-image" onclick="changeImage(1)" src="images/img6.webp" alt="">
+                        <img id="2" onclick="changeImage(2)" src="images/img1.webp" alt="">
+                        <img id="3" onclick="changeImage(3)" src="images/img7.webp" alt="">
+                        <img id="4" onclick="changeImage(4)" src="images/img8.webp" alt="">
+                        <img id="5" onclick="changeImage(5)" src="images/img4.webp" alt="">
+                        <img id="6" onclick="changeImage(6)" src="images/img5.webp" alt="">
+                    </div>
+                    <div class="product-main-image">
+                        <img id="main-image"class="main-image-inactive main-image-active "src="images/img6.webp" alt="">
+                    </div>
+                    <div class="window-product-description">
+                        <div class="product-description flexbox col w-100">
+                            <p class="vendor-name">The decor shop</p>
+                            <p class="product-name">ANTIQUE BLACK GOLDEN CAMBER TRINKET WALL CLOCK</p>
+                            <div class="product-prices flexbox w-100">
+                                <p class="old-price">Rs. 7300</p>
+                                <p class="new-price">Rs. 6800</p>
+                                <p class="product-savings">Save 30%</p>
+                            </div>
+                            <p class="offers">PRICE INCLUDING TAX & FREE SHIPPING ALL OVER INDIA...! CASH ON DELIVERY AVAILABLE...! </p>
+                            <hr>
+                            <p class="qty-label">quantity</p>
+                            <div class="quantity-bar flexbox">
+                                <span onclick="decreaseQty()"class="update-qty-btn">-</span>
+                                <input id="qty"class="quantity-input"type="text" value="1">
+                                <span onclick="increasQty()"class="update-qty-btn">+</span>
+                            </div>
+                            <div class="product-buttons w-100">
+                                <button onclick="addToCart()"class="btn btn-primary">Add To Cart</button>
+                                <button onclick="buyNow()"class="btn btn-secondary hover-shine">Buy It Now</button>
+                            </div>
+                            <p class="product-short-description">
+                                ANTIQUE METAL WALL CLOCK WITH GOLDEN FINISH
+                            </p>
+                            <p class="product-long-description">
+                                With The Help Of This Trinket Wall Clock, You Can Demonstrate Your Love For Antique Items While Also Giving Them A Touch Of Modernity. It Has A Quartz Movement, Roman And Conventional Numerals, And A Distressed Black Finish. The Ideal Timepiece For Any Space, It Will Add A Touch Of Vintage Charm To Your House.
+                            </p>
+                            <p id="product-size" class="detail">Size : 24 INCH in Diameter</p>
+                            <p id="product-material" class="detail ">Material : Metal</p>
+                            <p id="product-finish" class="detail ">Finish : Antique</p>
+                            <p class="detail warranty">ONE YEAR WARRANTY ON MOVEMENT MACHINE</p>
+                            <p class="ready-time">As We Make Fresh Piece-Dispatch Within 3 TO 5 Days...!</p>
+                            <div class="ask-us-outer flexbox col center collapsible w-100">
+                                <button onclick="collapseForm()" class="collapse-form-btn btn w-100">
+                                    Ask a question
+                                    <div class="up-down-btn">
+                                        <img id="arrowBtn" src="icons/arrow.svg" alt="">
+                                    </div>
+                                </button>
+                                <div id="ask-us-inner" class="ask-us-inner container">
+                                    <form action="#" class="ask-us w-100 flexbox col start-even">
+                                        <div class="flexbox input-row w-100">
+                                            <div class="input-item flexbox col start-even">
+                                                <label for="name">Name</label>
+                                                <input type="text" name="name" id="name" >
+                                            </div>
+                                            <div class="input-item flexbox col start-even">
+                                                <label for="email">Email</label>
+                                                <input type="email" id="email" >
+                                            </div>
+                                        </div>
+                                        <div class="input-item flexbox col start-even">
+                                            <label for="mobile">Phone number</label>
+                                            <input type="text" id="mobile">
+                                        </div>
+                                        <div class="input-item flexbox col start-even">
+                                            <label for="message">Message</label>
+                                            <textarea name="message" id="" rows="5"></textarea>
+                                        </div>
+                                        <div class="input-item w-100">
+                                            <input type="submit" class="btn btn-secondary hover-shine" value="Send">    
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
