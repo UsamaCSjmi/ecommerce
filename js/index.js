@@ -20,17 +20,17 @@ function changeImage(id){
     var src = element.getAttribute('src');
     document.getElementById("main-image").setAttribute('src',src);
 }
-function decreaseQty(){
-    var qty=document.getElementById("qty").value;
+function decreaseQty(id){
+    var qty=document.getElementById(id).value;
     if(qty>1)
         qty--;
-    document.getElementById("qty").value=qty;
+    document.getElementById(id).value=qty;
     
 }
-function increasQty(){
-    var qty=document.getElementById("qty").value;
+function increasQty(id){
+    var qty=document.getElementById(id).value;
     qty++;
-    document.getElementById("qty").value=qty;
+    document.getElementById(id).value=qty;
 }
 function collapseForm(){
     document.getElementById("arrowBtn").classList.toggle("arrowBtnUp");
@@ -38,4 +38,12 @@ function collapseForm(){
     doc.classList.toggle("form-open");
     document.getElementById("window").scrollTo({ left: 0, top: document.getElementById("window").scrollHeight, behavior: "smooth" });
 
+}
+
+function hideCart(){
+    document.getElementById("cart").classList.remove("cart-view");
+}
+
+function showCart(){
+    document.getElementById("cart").classList.add("cart-view");
 }

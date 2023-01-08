@@ -594,9 +594,9 @@
                             <hr>
                             <p class="qty-label">quantity</p>
                             <div class="quantity-bar flexbox">
-                                <span onclick="decreaseQty()"class="update-qty-btn">-</span>
-                                <input id="qty"class="quantity-input"type="text" value="1">
-                                <span onclick="increasQty()"class="update-qty-btn">+</span>
+                                <span onclick="decreaseQty('qty-product')"class="update-qty-btn">-</span>
+                                <input id="qty-product"class="quantity-input"type="text" value="1">
+                                <span onclick="increasQty('qty-product')"class="update-qty-btn">+</span>
                             </div>
                             <div class="product-buttons w-100">
                                 <button onclick="addToCart()"class="btn btn-primary">Add To Cart</button>
@@ -651,7 +651,7 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="shopping-cart-overlay w-100">
+        <div id="cart" class="shopping-cart-overlay w-100">
             <div class="cart-area flexbox col start-even">
                 <div class="cart-head flexbox start-even w-100">
                     <h2>cart</h2>
@@ -659,10 +659,81 @@
                         <img src="icons/close.svg" alt="close">
                     </div>
                 </div>
-                <div class="cart-items"></div>
-                <div class="cart-footer"></div>
+                <div class="cart-items flexbox col start w-100">
+                    <div class="cart-item flexbox w-100">
+                        <div class="cart-product-image">
+                            <a href="product.html">
+                                <img src="images/img7.webp" alt="">
+                            </a>
+                        </div>
+                        <div class="cart-product-description flexbox col start w-100">
+                            <a href="product.html">
+                                <p class="product-name w-100">ANTIQUE BLACK GOLDEN CAMBER TRINKET WALL CLOCK</p>
+                            </a>
+                            <div class="cart-product-info w-100 flexbox ">
+                                <div class="quantity-bar flexbox">
+                                    <span onclick="decreaseQty('qty-1')"class="update-qty-btn">-</span>
+                                    <input id="qty-1"class="quantity-input"type="text" value="1">
+                                    <span onclick="increasQty('qty-1')"class="update-qty-btn">+</span>
+                                </div>
+                                <p class="new-price">Rs. 1200.00</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="cart-item flexbox w-100">
+                        <div class="cart-product-image">
+                            <a href="product.html">
+                                <img src="images/img8.webp" alt="">
+                            </a>
+                        </div>
+                        <div class="cart-product-description flexbox col start w-100">
+                            <a href="product.html">
+                                <p class="product-name w-100">ANTIQUE BLACK GOLDEN CAMBER TRINKET WALL CLOCK</p>
+                            </a>
+                            <div class="cart-product-info w-100 flexbox ">
+                                <div class="quantity-bar flexbox">
+                                    <span onclick="decreaseQty('qty-2')"class="update-qty-btn">-</span>
+                                    <input id="qty-2"class="quantity-input"type="text" value="1">
+                                    <span onclick="increasQty('qty-2')"class="update-qty-btn">+</span>
+                                </div>
+                                <p class="new-price">Rs. 1200.00</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="cart-item flexbox w-100">
+                        <div class="cart-product-image">
+                            <a href="product.html">
+                                <img src="images/img9.webp" alt="">
+                            </a>
+                        </div>
+                        <div class="cart-product-description flexbox col start w-100">
+                            <a href="product.html">
+                                <p class="product-name w-100">ANTIQUE BLACK GOLDEN CAMBER TRINKET WALL CLOCK</p>
+                            </a>
+                            <div class="cart-product-info w-100 flexbox ">
+                                <div class="quantity-bar flexbox">
+                                    <span onclick="decreaseQty('qty-3')"class="update-qty-btn">-</span>
+                                    <input id="qty-3"class="quantity-input"type="text" value="1">
+                                    <span onclick="increasQty('qty-3')"class="update-qty-btn">+</span>
+                                </div>
+                                <p class="new-price">Rs. 1200.00</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="cart-footer w-100 flexbox col">
+                    <div class="cart-subtotal flexbox w-100 start-even">
+                        <p class="footer-heading" style="font-size: 13px;">subtotal</p>
+                        <p class="footer-heading" style="font-size: 13px;">Rs. 12,700.00</p>
+                    </div>
+                    <p class="cart-note">Shipping, taxes, and discounts codes calculated at checkout. Orders will be processed in INR. </p>
+                    <a class="btn btn-secondary hover-shine"href="checkout.html">check out</a>
+                </div>
             </div>
-        </div> -->
+        </div>
         <script type="text/javascript" src="js/index.js"></script>
     </body>
 </html>
