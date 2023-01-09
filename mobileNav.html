@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">       
         <link rel="shortcut icon" href="./images/d_white.png" type="image/x-icon">
         <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/responsive.css">
         
         <title>The Decor Shop</title>
     </head>
@@ -90,8 +91,15 @@
                                     </div>
                                 </div>
                             </div>
-                            <ul id="" class="sideNav">
-                                <li class="sideNavHead">Main Menu x</li>
+                            <ul id="side-nav" class="sideNav">
+                                <li class="sideNavHead w-100 flexbox start-even">
+                                    <span class="navItem">Main Menu</span>
+                                    <span class="navItem">
+                                        <div class="close navbarIcon" onclick="hideNav()">
+                                            <img src="icons/close.svg" alt="close">
+                                        </div>
+                                    </span>
+                                </li>
                                 <li class="navItem hasNav">
                                     <a class="navLink" href="/">Paintings</a>
                                     <ul class="subNavigation text-left">

@@ -1,0 +1,159 @@
+
+/* Side Menu  */
+.sideNav{
+    z-index: 999;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    overflow-y: auto;
+    width: 300px;
+    box-shadow: 0 10px 20px #00000017;
+}
+.sideNav .navItem{
+    display: block;
+}
+.sideNav li{
+    border-bottom: 1px solid #00000017;
+}
+.sideNav .hasNav{
+    position: relative;
+}
+/* .sideNav .hasNav::after{
+    position: absolute;
+    content: url(../icons/arrow.svg);
+    top: 10px;
+    right: 10px;
+    transform: rotate(90deg);
+    border-bottom: 1px solid #00000028;
+} */
+
+.sideNav .sideNavHead .navItem{
+    font-size: 18px ;
+    letter-spacing: 8px;
+    font-weight: 100;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen  and (max-width:770px){
+    .announcements{
+        flex-direction: column;
+    }
+    .user,.search{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+    .banner-slideshow,.banner-image{
+        height: 50vh;
+    }
+    .grid-5,grid-4{
+        grid-template-columns: 50% 50%;
+    }
+    .product-grid{
+        grid-template-columns: auto auto auto auto auto;
+        width: 100%;
+        overflow-x: auto;
+    }
+    .product-grid .item{
+        width: 200px;
+    }
+    .footer-grid{
+        grid-template-columns: 50% 50% ;
+    }
+    .window-inner{
+        flex-direction: column;
+    }
+    .product-sub-images{
+        flex-direction: row;
+        width: 100%;
+        /* overflow-x: auto; */
+    }
+    .product-sub-images > img{
+        margin-right: 10px;
+    }
+    .product-main-image,.window-product-description{
+        
+    }
+    .product-main-image,.window-product-description{
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+
+
+
+@media only screen  and (max-width:490px){
+    .banner-slideshow,.banner-image{
+        height: 35vh;
+    }
+    .banner-text {
+        padding: 10px 20px;
+        font-size: 30px;
+    }
+    .site-heading-simple h1 {
+        padding: 30px 0;
+    }
+    .main-tagline{
+        font-size: 20px;
+    }
+    .promo-section{
+        height: 60vh;
+    }
+    .promo-box{
+        top: 25px;
+        right: 25px;
+    }
+    .promo-content{
+        padding: 15px;
+    }
+    .about-us h1{
+        line-height: 40px;
+    }
+    .footer-grid{
+        grid-template-columns: 100% ;
+    }
+}
+
+@media only screen  and (max-width:400px){
+    .cart-area{
+        width: 100%;
+    }
+}
+
+
+@media only screen  and (max-width:340px){
+    .announcements{
+        font-size: 10px;
+    }
+    .grid-5,grid-4{
+        grid-template-columns: 100%;
+    } .product-grid{
+        grid-template-columns: auto auto auto auto auto;
+    }
+}

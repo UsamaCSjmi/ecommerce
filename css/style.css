@@ -164,7 +164,7 @@ h1, .h1, h2, .h2, h3, .h3 {
     display: none;
 }
 .menubtn .line{
-    height: 2px;
+    height: 1px;
     background: #0f0f0f;
     border: none;
 }
@@ -734,9 +734,10 @@ border: none;
     padding: 16px;
 }
 .price-n-delivery-info{
-    line-height: 80px;
+    line-height: 35px;
     text-transform: uppercase;
     border: 1px solid #0f0f0f;
+    padding: 35px 0;
 }
 .main-tagline{
     margin-right: 30px;
@@ -947,47 +948,4 @@ footer li{
 }
 .cart-view .cart-head,.cart-view .cart-items,.cart-view .cart-footer{
     transform: translateY(0);
-}
-
-/* Side Menu  */
-.sideNav{
-    z-index: 999;
-    background: #fff;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    overflow-y: auto;
-    width: 300px;
-    box-shadow: 0 10px 20px #00000017;
-}
-.sideNav .navItem{
-    display: block;
-}
-.sideNav li{
-    border-bottom: 1px solid #00000028;
-}
-.sideNav .hasNav{
-    position: relative;
-}
-.sideNav .hasNav::after{
-    position: absolute;
-    content: url(../icons/arrow.svg);
-    top: 10px;
-    right: 10px;
-    transform: rotate(90deg);
-    border-bottom: 1px solid #00000028;
-}
-
-
-
-
-
-
-
-
-
-
-@media (width:770px){
-
 }

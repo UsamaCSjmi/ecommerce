@@ -1,4 +1,4 @@
-
+if(window.screen.width<770)
 
 function showSearch(){
     document.getElementById("searchPanel").style.visibility="visible";
@@ -47,3 +47,11 @@ function hideCart(){
 function showCart(){
     document.getElementById("cart").classList.add("cart-view");
 }
+
+// function hideNav(){
+//     document.getElementById("side-nav").classList.remove("cart-view");
+// }
+
+// function showNav(){
+//     document.getElementById("side-nav").classList.add("cart-view");
+// }
