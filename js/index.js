@@ -1,4 +1,8 @@
-if(window.screen.width<770)
+if(window.screen.width<770){
+    var menu = document.getElementById("side-nav");
+    menu.classList.add("sideNav");
+    
+}
 
 function showSearch(){
     document.getElementById("searchPanel").style.visibility="visible";

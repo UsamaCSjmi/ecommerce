@@ -20,6 +20,12 @@
 .sideNav .hasNav{
     position: relative;
 }
+.sideNav .hasNav .up-down-btn{
+    top: 0;
+}
+
+
+
 /* .sideNav .hasNav::after{
     position: absolute;
     content: url(../icons/arrow.svg);
@@ -95,6 +101,7 @@
     }
     .product-sub-images > img{
         margin-right: 10px;
+        width: 65px;
     }
     .product-main-image,.window-product-description{
         
