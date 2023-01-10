@@ -94,7 +94,7 @@
     .banner-slideshow,.banner-image{
         height: 50vh;
     }
-    .grid-5,grid-4{
+    .grid-5,.grid-4{
         grid-template-columns: 50% 50%;
     }
     .product-grid{
