@@ -62,7 +62,7 @@
                         <nav class="w-100">
                             <div class="w-100 flexbox equal topNav">
                                 <div class="left-inner-head flexbox center">
-                                    <div class="menu-button"> 
+                                    <div onclick="showNav()"class="menu-button"> 
                                         <div class="menubtn">
                                             <hr class="line line1">
                                             <hr class="line line2">
@@ -91,7 +91,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <ul id="side-nav" class="sideNav">
+                            <ul id="side-nav" class="sideNav hideNav">
                                 <li class="sideNavHead w-100 flexbox start-even">
                                     <span class="navItem">Main Menu</span>
                                     <span class="navItem">
@@ -102,11 +102,6 @@
                                 </li>
                                 <li class="navItem hasNav">
                                     <a class="navLink" href="/">Paintings</a>
-                                    <span onclick="toggleSubNav(1)">
-                                        <div class="up-down-btn">
-                                            <img id="arrowBtn" src="icons/arrow.svg" alt="">
-                                        </div>
-                                    </span>
                                     <ul id="" class="subNavigation text-left">
                                         <li class="subNavItem">
                                             <a class="subNavLink" href="/">Item Item</a>

@@ -1,7 +1,15 @@
 if(window.screen.width<770){
     var menu = document.getElementById("side-nav");
     menu.classList.add("sideNav");
-    
+    var listItems = document.getElementsByClassName("hasNav");
+    // console.log(listItems.length())
+    for(var i=0;i<listItems.length;i++){
+        listItems[i].setAttribute("id",i);
+        var span = document.createElement("span");
+        span.innerHTML='<div class="up-down-btn"><img class="arrowBtn" src="icons/arrow.svg" alt=""></div>';
+        span.setAttribute("onclick","toggleSubNav("+i+")");
+        listItems[i].appendChild(span);
+    }
 }
 
 function showSearch(){
@@ -52,10 +60,16 @@ function showCart(){
     document.getElementById("cart").classList.add("cart-view");
 }
 
-// function hideNav(){
-//     document.getElementById("side-nav").classList.remove("cart-view");
-// }
+function hideNav(){
+    document.getElementById("side-nav").classList.add("hideNav");
+}
 
-// function showNav(){
-//     document.getElementById("side-nav").classList.add("cart-view");
-// }
+function showNav(){
+    document.getElementById("side-nav").classList.remove("hideNav");
+}
+
+function toggleSubNav(id){
+    var item = document.getElementById(id);
+    var subNav=item.getElementsByClassName("subNavigation");
+    subNav[0].classList.toggle("mobile-sub-nav");
+}

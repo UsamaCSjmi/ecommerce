@@ -10,6 +10,11 @@
     overflow-y: auto;
     width: 300px;
     box-shadow: 0 10px 20px #00000017;
+    transition: left 0.5s ease-in-out;
+}
+.hideNav{
+    left: -300px;
+    transition: left 0.5s ease-in-out;
 }
 .sideNav .navItem{
     display: block;
@@ -23,6 +28,14 @@
 .sideNav .hasNav .up-down-btn{
     top: 0;
 }
+
+.sideNav .hasNav:hover > .subNavigation{
+    visibility: hidden;
+    /* transform: translateZ(0);
+    transition: all .3s cubic-bezier(.2,.06,.05,.95); */
+
+}
+
 
 
 
@@ -39,6 +52,10 @@
     font-size: 18px ;
     letter-spacing: 8px;
     font-weight: 100;
+}
+
+.mobile-sub-nav{
+    visibility: visible !important;
 }
 
 
@@ -68,9 +85,9 @@
     .announcements{
         flex-direction: column;
     }
-    .user,.search{
+    /* .user,.search{
         display: none;
-    }
+    } */
     .menu-button{
         display: block;
     }

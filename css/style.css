@@ -232,7 +232,8 @@ h1, .h1, h2, .h2, h3, .h3 {
     box-shadow: 0 10px 20px #00000017;
     transform: translate3d(0,-12px,0);
     
-}.hasNav:hover > .subNavigation{
+}
+.hasNav:hover > .subNavigation{
     visibility: visible;
     transform: translateZ(0);
     transition: all .3s cubic-bezier(.2,.06,.05,.95);
@@ -676,7 +677,7 @@ border: none;
     top: 15px;
     z-index: 10;
 }
-#arrowBtn{
+#arrowBtn,.arrowBtn{
     width:10px;
     transform: rotate(0deg);
     transition: transform 0.5s ease-in-out;
