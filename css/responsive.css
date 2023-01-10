@@ -156,7 +156,7 @@
         width: 100%;
         overflow-x: auto;
     }
-    .product-sub-images > img{
+    .product-sub-images img{
         margin-right: 10px;
         width: 65px;
     }

@@ -5,7 +5,7 @@ if(window.screen.width<770){
     var listItems = document.getElementsByClassName("hasNav");
     // console.log(listItems.length())
     for(var i=0;i<listItems.length;i++){
-        listItems[i].setAttribute("id",i);
+        listItems[i].setAttribute("id","li-"+i);
         var span = document.createElement("span");
         span.innerHTML='<div class="up-down-btn"><img class="arrowBtn" src="icons/arrow.svg" alt=""></div>';
         span.setAttribute("onclick","toggleSubNav("+i+")");
@@ -23,9 +23,11 @@ function closeSearch(){
     document.getElementById("searchPanel").style.visibility="hidden";
 }
 function closeWindow(){
+    document.getElementById('overlay').classList.add("close-overlay");
     document.getElementById('overlay').classList.remove("open");
 }
 function productQuickView(){
+    document.getElementById('overlay').classList.remove("close-overlay");
     document.getElementById('overlay').classList.add("open");
 }
 function changeImage(id){
@@ -73,7 +75,7 @@ function showNav(){
 }
 
 function toggleSubNav(id){
-    var item = document.getElementById(id);
+    var item = document.getElementById("li-"+id);
     var subNav=item.getElementsByClassName("mobile-sub-menu");
 
     subNav[0].classList.toggle("mobile-sub-nav");

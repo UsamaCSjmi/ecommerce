@@ -472,31 +472,33 @@ header{
 
 /* overlay of product view  */
 .overlay{
-    visibility: hidden;
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: none;
     z-index: 10;
-    opacity: 0;
-    transform: translateY(5px);
-    transition: opacity .25s ease,transform .25s ease-out,background .4s ease;
+    transition: opacity .25s ease-in-out,transform .25s ease-in-out,background .4s ease-in-out,visibility 1s ease-in-out;
 }
 .open{
     visibility: visible;
     transform: translateY(0);
     background: #5c5c5c2d;
     opacity: 1;
-    transition: opacity .25s ease,transform .25s ease-out,background .4s ease;
+    transition: opacity .25s ease-in-out,transform .25s ease-in-out,background .4s ease-in-out,visibility 1s ease-in-out;
+}
+.close-overlay{
+    visibility: hidden;
+    transform: translateY(5px);
+    background: none;
+    opacity: 0;
+    transition: opacity .25s ease-in-out,transform .25s ease-in-out,background .4s ease-in-out,visibility 1s ease-in-out;
 }
 .product-description-window{
     position: relative;
     background: #fff;
     width: 92%;
     height: 90%;
-    /* padding: 0 30px; */
     overflow-x: hidden;
     overflow-y: auto;
 }
@@ -509,7 +511,7 @@ header{
     font-size: 20px;
 }
 .window-inner{
-    margin: 30px;
+    padding: 30px;
 }
 .product-sub-images{
     width: 7%;
