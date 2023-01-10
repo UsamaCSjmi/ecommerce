@@ -6,12 +6,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">       
         <link rel="shortcut icon" href="./images/d_white.png" type="image/x-icon">
         <link rel="stylesheet" href="./css/style.css">
-        
+        <link rel="stylesheet" href="./css/responsive.css">
         <title>The Decor Shop</title>
     </head>
     <body >
         <div class="site-wrapper flexbox col center w-100">
-            <div class="siteHeader">
+            <div class="siteHeader w-100">
                 <div class="w-100">
                     <div class="topbar">
                         <a href="/" class="announcements">
@@ -61,7 +61,7 @@
                         <nav class="w-100">
                             <div class="w-100 flexbox equal topNav">
                                 <div class="left-inner-head flexbox center">
-                                    <div class="menu-button"> 
+                                    <div onclick="showNav()"class="menu-button"> 
                                         <div class="menubtn">
                                             <hr class="line line1">
                                             <hr class="line line2">
@@ -85,15 +85,23 @@
                                     <div class="user navbarIcon">
                                         <img src="icons/user.svg" alt="user">
                                     </div>
-                                    <div class="cart navbarIcon cartIcon">
+                                    <div onclick="showCart()" class="cart navbarIcon cartIcon">
                                         <img src="icons/cart.svg" alt="cart">
                                     </div>
                                 </div>
                             </div>
-                            <ul id="mainNavigation text-left">
+                            <ul id="side-nav" class="sideNav hideNav">
+                                <li class="sideNavHead w-100 flexbox start-even">
+                                    <span class="navItem">Main Menu</span>
+                                    <span class="navItem">
+                                        <div class="close navbarIcon" onclick="hideNav()">
+                                            <img src="icons/close.svg" alt="close">
+                                        </div>
+                                    </span>
+                                </li>
                                 <li class="navItem hasNav">
                                     <a class="navLink" href="/">Paintings</a>
-                                    <ul class="subNavigation text-left">
+                                    <ul id="" class="subNavigation text-left">
                                         <li class="subNavItem">
                                             <a class="subNavLink" href="/">Item Item</a>
                                         </li>
@@ -516,9 +524,9 @@
                             <hr>
                             <p class="qty-label">quantity</p>
                             <div class="quantity-bar flexbox">
-                                <span onclick="decreaseQty()"class="update-qty-btn">-</span>
-                                <input id="qty"class="quantity-input"type="text" value="1">
-                                <span onclick="increasQty()"class="update-qty-btn">+</span>
+                                <span onclick="decreaseQty('qty-product')"class="update-qty-btn">-</span>
+                                <input id="qty-product"class="quantity-input"type="text" value="1">
+                                <span onclick="increasQty('qty-product')"class="update-qty-btn">+</span>
                             </div>
                             <div class="product-buttons w-100">
                                 <button onclick="addToCart()"class="btn btn-primary">Add To Cart</button>
@@ -570,6 +578,89 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+        <div id="cart" class="shopping-cart-overlay w-100">
+            <div class="cart-area flexbox col start-even">
+                <div class="cart-head flexbox start-even w-100">
+                    <h2>cart</h2>
+                    <div class="close cartIcon" onclick="hideCart()">
+                        <img src="icons/close.svg" alt="close">
+                    </div>
+                </div>
+                <div class="cart-items flexbox col start w-100">
+                    <div class="cart-item flexbox w-100">
+                        <div class="cart-product-image">
+                            <a href="product.html">
+                                <img src="images/img7.webp" alt="">
+                            </a>
+                        </div>
+                        <div class="cart-product-description flexbox col start w-100">
+                            <a href="product.html">
+                                <p class="product-name w-100">ANTIQUE BLACK GOLDEN CAMBER TRINKET WALL CLOCK</p>
+                            </a>
+                            <div class="cart-product-info w-100 flexbox ">
+                                <div class="quantity-bar flexbox">
+                                    <span onclick="decreaseQty('qty-1')"class="update-qty-btn">-</span>
+                                    <input id="qty-1"class="quantity-input"type="text" value="1">
+                                    <span onclick="increasQty('qty-1')"class="update-qty-btn">+</span>
+                                </div>
+                                <p class="new-price">Rs. 1200.00</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="cart-item flexbox w-100">
+                        <div class="cart-product-image">
+                            <a href="product.html">
+                                <img src="images/img8.webp" alt="">
+                            </a>
+                        </div>
+                        <div class="cart-product-description flexbox col start w-100">
+                            <a href="product.html">
+                                <p class="product-name w-100">ANTIQUE BLACK GOLDEN CAMBER TRINKET WALL CLOCK</p>
+                            </a>
+                            <div class="cart-product-info w-100 flexbox ">
+                                <div class="quantity-bar flexbox">
+                                    <span onclick="decreaseQty('qty-2')"class="update-qty-btn">-</span>
+                                    <input id="qty-2"class="quantity-input"type="text" value="1">
+                                    <span onclick="increasQty('qty-2')"class="update-qty-btn">+</span>
+                                </div>
+                                <p class="new-price">Rs. 1200.00</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="cart-item flexbox w-100">
+                        <div class="cart-product-image">
+                            <a href="product.html">
+                                <img src="images/img9.webp" alt="">
+                            </a>
+                        </div>
+                        <div class="cart-product-description flexbox col start w-100">
+                            <a href="product.html">
+                                <p class="product-name w-100">ANTIQUE BLACK GOLDEN CAMBER TRINKET WALL CLOCK</p>
+                            </a>
+                            <div class="cart-product-info w-100 flexbox ">
+                                <div class="quantity-bar flexbox">
+                                    <span onclick="decreaseQty('qty-3')"class="update-qty-btn">-</span>
+                                    <input id="qty-3"class="quantity-input"type="text" value="1">
+                                    <span onclick="increasQty('qty-3')"class="update-qty-btn">+</span>
+                                </div>
+                                <p class="new-price">Rs. 1200.00</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="cart-footer w-100 flexbox col">
+                    <div class="cart-subtotal flexbox w-100 start-even">
+                        <p class="footer-heading" style="font-size: 13px;">subtotal</p>
+                        <p class="footer-heading" style="font-size: 13px;">Rs. 12,700.00</p>
+                    </div>
+                    <p class="cart-note">Shipping, taxes, and discounts codes calculated at checkout. Orders will be processed in INR. </p>
+                    <a class="btn btn-secondary hover-shine"href="checkout.html">check out</a>
                 </div>
             </div>
         </div>

@@ -6,12 +6,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">       
         <link rel="shortcut icon" href="./images/d_white.png" type="image/x-icon">
         <link rel="stylesheet" href="./css/style.css">
-        
+        <link rel="stylesheet" href="./css/responsive.css">
         <title>The Decor Shop</title>
     </head>
     <body >
         <div class="site-wrapper flexbox col center w-100">
-            <div class="siteHeader">
+            <div class="siteHeader w-100">
                 <div class="w-100">
                     <div class="topbar">
                         <a href="/" class="announcements">
@@ -61,12 +61,15 @@
                         <nav class="w-100">
                             <div class="w-100 flexbox equal topNav">
                                 <div class="left-inner-head flexbox center">
-                                    <div class="menu-button"> 
+                                    <div onclick="showNav()"class="menu-button"> 
                                         <div class="menubtn">
                                             <hr class="line line1">
                                             <hr class="line line2">
                                             <hr class="line line3">
                                         </div>
+                                    </div>
+                                    <div onclick="showSearch()" class="search navbarIcon">
+                                        <img src="icons/search.svg" alt="search">
                                     </div>
                                 </div>
                                 <div class="mid-inner-head flexbox center">
@@ -82,12 +85,23 @@
                                     <div class="user navbarIcon">
                                         <img src="icons/user.svg" alt="user">
                                     </div>
+                                    <div onclick="showCart()" class="cart navbarIcon cartIcon">
+                                        <img src="icons/cart.svg" alt="cart">
+                                    </div>
                                 </div>
                             </div>
-                            <ul id="mainNavigation text-left">
+                            <ul id="side-nav" class="sideNav hideNav">
+                                <li class="sideNavHead w-100 flexbox start-even">
+                                    <span class="navItem">Main Menu</span>
+                                    <span class="navItem">
+                                        <div class="close navbarIcon" onclick="hideNav()">
+                                            <img src="icons/close.svg" alt="close">
+                                        </div>
+                                    </span>
+                                </li>
                                 <li class="navItem hasNav">
                                     <a class="navLink" href="/">Paintings</a>
-                                    <ul class="subNavigation text-left">
+                                    <ul id="" class="subNavigation text-left">
                                         <li class="subNavItem">
                                             <a class="subNavLink" href="/">Item Item</a>
                                         </li>
@@ -186,6 +200,27 @@
                                 </li>
                             </ul>                    
                         </nav>
+                    </div>
+                    <div id="searchPanel"class="siteSearchPanel flexbox center w-100">
+                        <div class="container">
+                            <div class="w-100 flexbox equal topNav">
+                                <div class="left-inner-head flexbox center">
+                                    <div class="search navbarIcon">
+                                        <img src="icons/search.svg" alt="search">
+                                    </div>
+                                </div>
+                                <div class="mid-inner-head">
+                                    <div class="searchInput w-100">
+                                        <input type="text" placeholder="Search Here ...">
+                                    </div>
+                                </div>
+                                <div class="right-inner-head flexbox center">
+                                    <div class="close navbarIcon" onclick="closeSearch()">
+                                        <img src="icons/close.svg" alt="close">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </header>
             </div>

@@ -15,7 +15,7 @@
             <div class="siteHeader w-100">
                 <div class="w-100">
                     <div class="topbar">
-                        <a href="#" class="announcements">
+                        <a href="/" class="announcements">
                             <span>Made in India | Cash on delivery available |</span>
                             <span>&nbsp Enjoy free shipping all over india</span>
                         </a>
@@ -62,7 +62,7 @@
                         <nav class="w-100">
                             <div class="w-100 flexbox equal topNav">
                                 <div class="left-inner-head flexbox center">
-                                    <div class="menu-button"> 
+                                    <div onclick="showNav()"class="menu-button"> 
                                         <div class="menubtn">
                                             <hr class="line line1">
                                             <hr class="line line2">
@@ -91,10 +91,18 @@
                                     </div>
                                 </div>
                             </div>
-                            <ul id="side-nav">
+                            <ul id="side-nav" class="sideNav hideNav">
+                                <li class="sideNavHead w-100 flexbox start-even">
+                                    <span class="navItem">Main Menu</span>
+                                    <span class="navItem">
+                                        <div class="close navbarIcon" onclick="hideNav()">
+                                            <img src="icons/close.svg" alt="close">
+                                        </div>
+                                    </span>
+                                </li>
                                 <li class="navItem hasNav">
                                     <a class="navLink" href="/">Paintings</a>
-                                    <ul class="subNavigation text-left">
+                                    <ul id="" class="subNavigation text-left">
                                         <li class="subNavItem">
                                             <a class="subNavLink" href="/">Item Item</a>
                                         </li>
