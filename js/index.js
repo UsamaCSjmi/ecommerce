@@ -1,5 +1,6 @@
 if(window.screen.width<770){
     var menu = document.getElementById("side-nav");
+    menu.classList.add("hideNav");
     menu.classList.add("sideNav");
     var listItems = document.getElementsByClassName("hasNav");
     // console.log(listItems.length())
@@ -9,6 +10,9 @@ if(window.screen.width<770){
         span.innerHTML='<div class="up-down-btn"><img class="arrowBtn" src="icons/arrow.svg" alt=""></div>';
         span.setAttribute("onclick","toggleSubNav("+i+")");
         listItems[i].appendChild(span);
+        var subNav=listItems[i].getElementsByClassName("subNavigation");
+        subNav[0].classList.add("mobile-sub-menu");
+        subNav[0].classList.remove("subNavigation");
     }
 }
 
@@ -70,6 +74,7 @@ function showNav(){
 
 function toggleSubNav(id){
     var item = document.getElementById(id);
-    var subNav=item.getElementsByClassName("subNavigation");
+    var subNav=item.getElementsByClassName("mobile-sub-menu");
+
     subNav[0].classList.toggle("mobile-sub-nav");
 }

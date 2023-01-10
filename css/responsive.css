@@ -3,7 +3,7 @@
 .sideNav{
     z-index: 999;
     background: #fff;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     height: 100vh;
@@ -11,6 +11,9 @@
     width: 300px;
     box-shadow: 0 10px 20px #00000017;
     transition: left 0.5s ease-in-out;
+}
+.sideNavHead{
+    display: none;
 }
 .hideNav{
     left: -300px;
@@ -54,9 +57,7 @@
     font-weight: 100;
 }
 
-.mobile-sub-nav{
-    visibility: visible !important;
-}
+
 
 
 
@@ -85,12 +86,50 @@
     .announcements{
         flex-direction: column;
     }
-    /* .user,.search{
-        display: none;
-    } */
     .menu-button{
         display: block;
     }
+
+
+
+
+
+    
+
+    .sideNavHead{
+        display: flex;
+    }
+    .mobile-sub-menu{
+        position: unset;
+        z-index: 7;
+        display: none;
+        height: 0;
+        width: 100%;
+        box-shadow: none;
+        transform: translate3d(0,-12px,0);
+        transition: height 0.3s, transform 0.5s;
+    }
+    .mobile-sub-nav{
+        visibility: visible;
+        display: block;
+        height: 100px;
+        transform: translate3d(0,0,0);
+
+        transition: height 0.3s, transform 0.5s;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
     .banner-slideshow,.banner-image{
         height: 50vh;
     }
