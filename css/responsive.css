@@ -114,7 +114,7 @@
     .product-sub-images{
         flex-direction: row;
         width: 100%;
-        /* overflow-x: auto; */
+        overflow-x: auto;
     }
     .product-sub-images > img{
         margin-right: 10px;
