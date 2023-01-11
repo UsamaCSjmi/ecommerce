@@ -5,11 +5,16 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">       
         <link rel="shortcut icon" href="./images/d_white.png" type="image/x-icon">
+        <link rel="stylesheet" href="./css/loaders.css">
         <link rel="stylesheet" href="./css/style.css">
         <link rel="stylesheet" href="./css/responsive.css">
+        
         <title>The Decor Shop</title>
     </head>
-    <body >
+    <body onload="loader('body-loader')">
+        <div id="body-loader" class="loader">
+            <div class="site-preloader"></div>
+        </div>
         <div class="site-wrapper flexbox col center w-100">
             <div class="siteHeader w-100">
                 <div class="w-100">
@@ -365,15 +370,65 @@
                 <!-- products grid -->
                 <div class="categories site-grid grid-4 w-100">
                     <div class="item">
-                        <a href="product.html">
-                            <div class=" single-product w-100 flexbox col center">
-                                <div class="product-image-container">
-                                    <img src="images/img1.webp" alt="Category Image">
+                        <div class=" single-product w-100 flexbox col center">
+                            <div class="product-image-container">
+                                    <a href="product.html">
+                                        <img src="images/img1.webp" alt="Category Image">
+                                    </a>
                                     <div class="product-image-up flexbox center">
                                         <button onclick="productQuickView()" class="quick-view">Quick View</button>
                                     </div>
                                     <p class="product-tag">Sale</p>
                                 </div>
+                                <a href="product.html">
+                                    <div class="product-description flexbox col center w-100">
+                                        <p class="product-name">ANTIQUE BLACK GOLDEN CAMBER TRINKET WALL CLOCK</p>
+                                        <p class="vendor-name">The decor shop</p>
+                                        <div class="product-prices flexbox center w-100">
+                                            <p class="old-price">Rs. 7300</p>
+                                            <p class="new-price">Rs. 6800</p>
+                                        </div>
+                                        <p class="product-savings">Save 30%</p>
+                                    </div>
+                                </a>
+                            </div>
+                    </div>
+                    <div class="item">
+                        <div class=" single-product w-100 flexbox col center">
+                            <div class="product-image-container">
+                                    <a href="product.html">
+                                        <img src="images/img4.webp" alt="Category Image">
+                                    </a>
+                                    <div class="product-image-up flexbox center">
+                                        <button onclick="productQuickView()" class="quick-view">Quick View</button>
+                                    </div>
+                                    <p class="product-tag">Sale</p>
+                                </div>
+                                <a href="product.html">
+                                    <div class="product-description flexbox col center w-100">
+                                        <p class="product-name">ANTIQUE BLACK GOLDEN CAMBER TRINKET WALL CLOCK</p>
+                                        <p class="vendor-name">The decor shop</p>
+                                        <div class="product-prices flexbox center w-100">
+                                            <p class="old-price">Rs. 7300</p>
+                                            <p class="new-price">Rs. 6800</p>
+                                        </div>
+                                        <p class="product-savings">Save 30%</p>
+                                    </div>
+                                </a>
+                            </div>
+                    </div>
+                    <div class="item">
+                        <div class=" single-product w-100 flexbox col center">
+                            <div class="product-image-container">
+                            <a href="product.html">
+                                <img src="images/img5.webp" alt="Category Image">
+                            </a>
+                                <div class="product-image-up flexbox center">
+                                    <button onclick="productQuickView()" class="quick-view">Quick View</button>
+                                </div>
+                                <p class="product-tag">Sale</p>
+                            </div>
+                            <a href="product.html">
                                 <div class="product-description flexbox col center w-100">
                                     <p class="product-name">ANTIQUE BLACK GOLDEN CAMBER TRINKET WALL CLOCK</p>
                                     <p class="vendor-name">The decor shop</p>
@@ -383,63 +438,21 @@
                                     </div>
                                     <p class="product-savings">Save 30%</p>
                                 </div>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
                     </div>
                     <div class="item">
-                        <a href="product.html">
-                            <div class=" single-product w-100 flexbox col center">
-                                <div class="product-image-container">
-                                    <img src="images/img4.webp" alt="Category Image">
-                                    <div class="product-image-up flexbox center">
-                                        <button onclick="productQuickView()" class="quick-view">Quick View</button>
-                                    </div>
-                                    <p class="product-tag">Sale</p>
-                                </div>
-                                <div class="product-description flexbox col center w-100">
-                                    <p class="product-name">ANTIQUE BLACK GOLDEN CAMBER TRINKET WALL CLOCK</p>
-                                    <p class="vendor-name">The decor shop</p>
-                                    <div class="product-prices flexbox center w-100">
-                                        <p class="old-price">Rs. 7300</p>
-                                        <p class="new-price">Rs. 6800</p>
-                                    </div>
-                                    <p class="product-savings">Save 30%</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="product.html">
-                            <div class=" single-product w-100 flexbox col center">
-                                <div class="product-image-container">
-                                    <img src="images/img5.webp" alt="Category Image">
-                                    <div class="product-image-up flexbox center">
-                                        <button onclick="productQuickView()" class="quick-view">Quick View</button>
-                                    </div>
-                                    <p class="product-tag">Sale</p>
-                                </div>
-                                <div class="product-description flexbox col center w-100">
-                                    <p class="product-name">ANTIQUE BLACK GOLDEN CAMBER TRINKET WALL CLOCK</p>
-                                    <p class="vendor-name">The decor shop</p>
-                                    <div class="product-prices flexbox center w-100">
-                                        <p class="old-price">Rs. 7300</p>
-                                        <p class="new-price">Rs. 6800</p>
-                                    </div>
-                                    <p class="product-savings">Save 30%</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="product.html">
-                            <div class=" single-product w-100 flexbox col center">
-                                <div class="product-image-container">
+                        <div class=" single-product w-100 flexbox col center">
+                            <div class="product-image-container">
+                                <a href="product.html">
                                     <img src="images/img6.webp" alt="Category Image">
-                                    <div class="product-image-up flexbox center">
-                                        <button onclick="productQuickView()" class="quick-view">Quick View</button>
-                                    </div>
-                                    <p class="product-tag">Sale</p>
+                                </a>
+                                <div class="product-image-up flexbox center">
+                                    <button onclick="productQuickView()" class="quick-view">Quick View</button>
                                 </div>
+                                <p class="product-tag">Sale</p>
+                            </div>
+                            <a href="product.html">
                                 <div class="product-description flexbox col center w-100">
                                     <p class="product-name">ANTIQUE BLACK GOLDEN CAMBER TRINKET WALL CLOCK</p>
                                     <p class="vendor-name">The decor shop</p>
@@ -449,19 +462,21 @@
                                     </div>
                                     <p class="product-savings">Save 30%</p>
                                 </div>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
                     </div>
                     <div class="item">
-                        <a href="product.html">
-                            <div class=" single-product w-100 flexbox col center">
-                                <div class="product-image-container">
+                        <div class=" single-product w-100 flexbox col center">
+                            <div class="product-image-container">
+                                <a href="product.html">
                                     <img src="images/img1.webp" alt="Category Image">
-                                    <div class="product-image-up flexbox center">
-                                        <button onclick="productQuickView()" class="quick-view">Quick View</button>
-                                    </div>
-                                    <p class="product-tag">Sale</p>
+                                </a>
+                                <div class="product-image-up flexbox center">
+                                    <button onclick="productQuickView()" class="quick-view">Quick View</button>
                                 </div>
+                                <p class="product-tag">Sale</p>
+                            </div>
+                            <a href="product.html">
                                 <div class="product-description flexbox col center w-100">
                                     <p class="product-name">ANTIQUE BLACK GOLDEN CAMBER TRINKET WALL CLOCK</p>
                                     <p class="vendor-name">The decor shop</p>
@@ -471,19 +486,69 @@
                                     </div>
                                     <p class="product-savings">Save 30%</p>
                                 </div>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
                     </div>
                     <div class="item">
-                        <a href="product.html">
-                            <div class=" single-product w-100 flexbox col center">
-                                <div class="product-image-container">
-                                    <img src="images/img1.webp" alt="Category Image">
+                        <div class=" single-product w-100 flexbox col center">
+                            <div class="product-image-container">
+                                    <a href="product.html">
+                                        <img src="images/img1.webp" alt="Category Image">
+                                    </a>
                                     <div class="product-image-up flexbox center">
                                         <button onclick="productQuickView()" class="quick-view">Quick View</button>
                                     </div>
                                     <p class="product-tag">Sale</p>
                                 </div>
+                                <a href="product.html">
+                                    <div class="product-description flexbox col center w-100">
+                                        <p class="product-name">ANTIQUE BLACK GOLDEN CAMBER TRINKET WALL CLOCK</p>
+                                        <p class="vendor-name">The decor shop</p>
+                                        <div class="product-prices flexbox center w-100">
+                                            <p class="old-price">Rs. 7300</p>
+                                            <p class="new-price">Rs. 6800</p>
+                                        </div>
+                                        <p class="product-savings">Save 30%</p>
+                                    </div>
+                                </a>
+                            </div>
+                    </div>
+                    <div class="item">
+                        <div class=" single-product w-100 flexbox col center">
+                            <div class="product-image-container">
+                                    <a href="product.html">
+                                        <img src="images/img4.webp" alt="Category Image">
+                                    </a>
+                                    <div class="product-image-up flexbox center">
+                                        <button onclick="productQuickView()" class="quick-view">Quick View</button>
+                                    </div>
+                                    <p class="product-tag">Sale</p>
+                                </div>
+                                <a href="product.html">
+                                    <div class="product-description flexbox col center w-100">
+                                        <p class="product-name">ANTIQUE BLACK GOLDEN CAMBER TRINKET WALL CLOCK</p>
+                                        <p class="vendor-name">The decor shop</p>
+                                        <div class="product-prices flexbox center w-100">
+                                            <p class="old-price">Rs. 7300</p>
+                                            <p class="new-price">Rs. 6800</p>
+                                        </div>
+                                        <p class="product-savings">Save 30%</p>
+                                    </div>
+                                </a>
+                            </div>
+                    </div>
+                    <div class="item">
+                        <div class=" single-product w-100 flexbox col center">
+                            <div class="product-image-container">
+                            <a href="product.html">
+                                <img src="images/img5.webp" alt="Category Image">
+                            </a>
+                                <div class="product-image-up flexbox center">
+                                    <button onclick="productQuickView()" class="quick-view">Quick View</button>
+                                </div>
+                                <p class="product-tag">Sale</p>
+                            </div>
+                            <a href="product.html">
                                 <div class="product-description flexbox col center w-100">
                                     <p class="product-name">ANTIQUE BLACK GOLDEN CAMBER TRINKET WALL CLOCK</p>
                                     <p class="vendor-name">The decor shop</p>
@@ -493,63 +558,21 @@
                                     </div>
                                     <p class="product-savings">Save 30%</p>
                                 </div>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
                     </div>
                     <div class="item">
-                        <a href="product.html">
-                            <div class=" single-product w-100 flexbox col center">
-                                <div class="product-image-container">
-                                    <img src="images/img4.webp" alt="Category Image">
-                                    <div class="product-image-up flexbox center">
-                                        <button onclick="productQuickView()" class="quick-view">Quick View</button>
-                                    </div>
-                                    <p class="product-tag">Sale</p>
-                                </div>
-                                <div class="product-description flexbox col center w-100">
-                                    <p class="product-name">ANTIQUE BLACK GOLDEN CAMBER TRINKET WALL CLOCK</p>
-                                    <p class="vendor-name">The decor shop</p>
-                                    <div class="product-prices flexbox center w-100">
-                                        <p class="old-price">Rs. 7300</p>
-                                        <p class="new-price">Rs. 6800</p>
-                                    </div>
-                                    <p class="product-savings">Save 30%</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="product.html">
-                            <div class=" single-product w-100 flexbox col center">
-                                <div class="product-image-container">
-                                    <img src="images/img5.webp" alt="Category Image">
-                                    <div class="product-image-up flexbox center">
-                                        <button onclick="productQuickView()" class="quick-view">Quick View</button>
-                                    </div>
-                                    <p class="product-tag">Sale</p>
-                                </div>
-                                <div class="product-description flexbox col center w-100">
-                                    <p class="product-name">ANTIQUE BLACK GOLDEN CAMBER TRINKET WALL CLOCK</p>
-                                    <p class="vendor-name">The decor shop</p>
-                                    <div class="product-prices flexbox center w-100">
-                                        <p class="old-price">Rs. 7300</p>
-                                        <p class="new-price">Rs. 6800</p>
-                                    </div>
-                                    <p class="product-savings">Save 30%</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="product.html">
-                            <div class=" single-product w-100 flexbox col center">
-                                <div class="product-image-container">
+                        <div class=" single-product w-100 flexbox col center">
+                            <div class="product-image-container">
+                                <a href="product.html">
                                     <img src="images/img6.webp" alt="Category Image">
-                                    <div class="product-image-up flexbox center">
-                                        <button onclick="productQuickView()" class="quick-view">Quick View</button>
-                                    </div>
-                                    <p class="product-tag">Sale</p>
+                                </a>
+                                <div class="product-image-up flexbox center">
+                                    <button onclick="productQuickView()" class="quick-view">Quick View</button>
                                 </div>
+                                <p class="product-tag">Sale</p>
+                            </div>
+                            <a href="product.html">
                                 <div class="product-description flexbox col center w-100">
                                     <p class="product-name">ANTIQUE BLACK GOLDEN CAMBER TRINKET WALL CLOCK</p>
                                     <p class="vendor-name">The decor shop</p>
@@ -559,19 +582,21 @@
                                     </div>
                                     <p class="product-savings">Save 30%</p>
                                 </div>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
                     </div>
                     <div class="item">
-                        <a href="product.html">
-                            <div class=" single-product w-100 flexbox col center">
-                                <div class="product-image-container">
+                        <div class=" single-product w-100 flexbox col center">
+                            <div class="product-image-container">
+                                <a href="product.html">
                                     <img src="images/img1.webp" alt="Category Image">
-                                    <div class="product-image-up flexbox center">
-                                        <button onclick="productQuickView()" class="quick-view">Quick View</button>
-                                    </div>
-                                    <p class="product-tag">Sale</p>
+                                </a>
+                                <div class="product-image-up flexbox center">
+                                    <button onclick="productQuickView()" class="quick-view">Quick View</button>
                                 </div>
+                                <p class="product-tag">Sale</p>
+                            </div>
+                            <a href="product.html">
                                 <div class="product-description flexbox col center w-100">
                                     <p class="product-name">ANTIQUE BLACK GOLDEN CAMBER TRINKET WALL CLOCK</p>
                                     <p class="vendor-name">The decor shop</p>
@@ -581,19 +606,69 @@
                                     </div>
                                     <p class="product-savings">Save 30%</p>
                                 </div>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
                     </div>
                     <div class="item">
-                        <a href="product.html">
-                            <div class=" single-product w-100 flexbox col center">
-                                <div class="product-image-container">
-                                    <img src="images/img1.webp" alt="Category Image">
+                        <div class=" single-product w-100 flexbox col center">
+                            <div class="product-image-container">
+                                    <a href="product.html">
+                                        <img src="images/img1.webp" alt="Category Image">
+                                    </a>
                                     <div class="product-image-up flexbox center">
                                         <button onclick="productQuickView()" class="quick-view">Quick View</button>
                                     </div>
                                     <p class="product-tag">Sale</p>
                                 </div>
+                                <a href="product.html">
+                                    <div class="product-description flexbox col center w-100">
+                                        <p class="product-name">ANTIQUE BLACK GOLDEN CAMBER TRINKET WALL CLOCK</p>
+                                        <p class="vendor-name">The decor shop</p>
+                                        <div class="product-prices flexbox center w-100">
+                                            <p class="old-price">Rs. 7300</p>
+                                            <p class="new-price">Rs. 6800</p>
+                                        </div>
+                                        <p class="product-savings">Save 30%</p>
+                                    </div>
+                                </a>
+                            </div>
+                    </div>
+                    <div class="item">
+                        <div class=" single-product w-100 flexbox col center">
+                            <div class="product-image-container">
+                                    <a href="product.html">
+                                        <img src="images/img4.webp" alt="Category Image">
+                                    </a>
+                                    <div class="product-image-up flexbox center">
+                                        <button onclick="productQuickView()" class="quick-view">Quick View</button>
+                                    </div>
+                                    <p class="product-tag">Sale</p>
+                                </div>
+                                <a href="product.html">
+                                    <div class="product-description flexbox col center w-100">
+                                        <p class="product-name">ANTIQUE BLACK GOLDEN CAMBER TRINKET WALL CLOCK</p>
+                                        <p class="vendor-name">The decor shop</p>
+                                        <div class="product-prices flexbox center w-100">
+                                            <p class="old-price">Rs. 7300</p>
+                                            <p class="new-price">Rs. 6800</p>
+                                        </div>
+                                        <p class="product-savings">Save 30%</p>
+                                    </div>
+                                </a>
+                            </div>
+                    </div>
+                    <div class="item">
+                        <div class=" single-product w-100 flexbox col center">
+                            <div class="product-image-container">
+                            <a href="product.html">
+                                <img src="images/img5.webp" alt="Category Image">
+                            </a>
+                                <div class="product-image-up flexbox center">
+                                    <button onclick="productQuickView()" class="quick-view">Quick View</button>
+                                </div>
+                                <p class="product-tag">Sale</p>
+                            </div>
+                            <a href="product.html">
                                 <div class="product-description flexbox col center w-100">
                                     <p class="product-name">ANTIQUE BLACK GOLDEN CAMBER TRINKET WALL CLOCK</p>
                                     <p class="vendor-name">The decor shop</p>
@@ -603,63 +678,21 @@
                                     </div>
                                     <p class="product-savings">Save 30%</p>
                                 </div>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
                     </div>
                     <div class="item">
-                        <a href="product.html">
-                            <div class=" single-product w-100 flexbox col center">
-                                <div class="product-image-container">
-                                    <img src="images/img4.webp" alt="Category Image">
-                                    <div class="product-image-up flexbox center">
-                                        <button onclick="productQuickView()" class="quick-view">Quick View</button>
-                                    </div>
-                                    <p class="product-tag">Sale</p>
-                                </div>
-                                <div class="product-description flexbox col center w-100">
-                                    <p class="product-name">ANTIQUE BLACK GOLDEN CAMBER TRINKET WALL CLOCK</p>
-                                    <p class="vendor-name">The decor shop</p>
-                                    <div class="product-prices flexbox center w-100">
-                                        <p class="old-price">Rs. 7300</p>
-                                        <p class="new-price">Rs. 6800</p>
-                                    </div>
-                                    <p class="product-savings">Save 30%</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="product.html">
-                            <div class=" single-product w-100 flexbox col center">
-                                <div class="product-image-container">
-                                    <img src="images/img5.webp" alt="Category Image">
-                                    <div class="product-image-up flexbox center">
-                                        <button onclick="productQuickView()" class="quick-view">Quick View</button>
-                                    </div>
-                                    <p class="product-tag">Sale</p>
-                                </div>
-                                <div class="product-description flexbox col center w-100">
-                                    <p class="product-name">ANTIQUE BLACK GOLDEN CAMBER TRINKET WALL CLOCK</p>
-                                    <p class="vendor-name">The decor shop</p>
-                                    <div class="product-prices flexbox center w-100">
-                                        <p class="old-price">Rs. 7300</p>
-                                        <p class="new-price">Rs. 6800</p>
-                                    </div>
-                                    <p class="product-savings">Save 30%</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="product.html">
-                            <div class=" single-product w-100 flexbox col center">
-                                <div class="product-image-container">
+                        <div class=" single-product w-100 flexbox col center">
+                            <div class="product-image-container">
+                                <a href="product.html">
                                     <img src="images/img6.webp" alt="Category Image">
-                                    <div class="product-image-up flexbox center">
-                                        <button onclick="productQuickView()" class="quick-view">Quick View</button>
-                                    </div>
-                                    <p class="product-tag">Sale</p>
+                                </a>
+                                <div class="product-image-up flexbox center">
+                                    <button onclick="productQuickView()" class="quick-view">Quick View</button>
                                 </div>
+                                <p class="product-tag">Sale</p>
+                            </div>
+                            <a href="product.html">
                                 <div class="product-description flexbox col center w-100">
                                     <p class="product-name">ANTIQUE BLACK GOLDEN CAMBER TRINKET WALL CLOCK</p>
                                     <p class="vendor-name">The decor shop</p>
@@ -669,19 +702,21 @@
                                     </div>
                                     <p class="product-savings">Save 30%</p>
                                 </div>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
                     </div>
                     <div class="item">
-                        <a href="product.html">
-                            <div class=" single-product w-100 flexbox col center">
-                                <div class="product-image-container">
+                        <div class=" single-product w-100 flexbox col center">
+                            <div class="product-image-container">
+                                <a href="product.html">
                                     <img src="images/img1.webp" alt="Category Image">
-                                    <div class="product-image-up flexbox center">
-                                        <button onclick="productQuickView()" class="quick-view">Quick View</button>
-                                    </div>
-                                    <p class="product-tag">Sale</p>
+                                </a>
+                                <div class="product-image-up flexbox center">
+                                    <button onclick="productQuickView()" class="quick-view">Quick View</button>
                                 </div>
+                                <p class="product-tag">Sale</p>
+                            </div>
+                            <a href="product.html">
                                 <div class="product-description flexbox col center w-100">
                                     <p class="product-name">ANTIQUE BLACK GOLDEN CAMBER TRINKET WALL CLOCK</p>
                                     <p class="vendor-name">The decor shop</p>
@@ -691,8 +726,128 @@
                                     </div>
                                     <p class="product-savings">Save 30%</p>
                                 </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class=" single-product w-100 flexbox col center">
+                            <div class="product-image-container">
+                                    <a href="product.html">
+                                        <img src="images/img1.webp" alt="Category Image">
+                                    </a>
+                                    <div class="product-image-up flexbox center">
+                                        <button onclick="productQuickView()" class="quick-view">Quick View</button>
+                                    </div>
+                                    <p class="product-tag">Sale</p>
+                                </div>
+                                <a href="product.html">
+                                    <div class="product-description flexbox col center w-100">
+                                        <p class="product-name">ANTIQUE BLACK GOLDEN CAMBER TRINKET WALL CLOCK</p>
+                                        <p class="vendor-name">The decor shop</p>
+                                        <div class="product-prices flexbox center w-100">
+                                            <p class="old-price">Rs. 7300</p>
+                                            <p class="new-price">Rs. 6800</p>
+                                        </div>
+                                        <p class="product-savings">Save 30%</p>
+                                    </div>
+                                </a>
                             </div>
-                        </a>
+                    </div>
+                    <div class="item">
+                        <div class=" single-product w-100 flexbox col center">
+                            <div class="product-image-container">
+                                    <a href="product.html">
+                                        <img src="images/img4.webp" alt="Category Image">
+                                    </a>
+                                    <div class="product-image-up flexbox center">
+                                        <button onclick="productQuickView()" class="quick-view">Quick View</button>
+                                    </div>
+                                    <p class="product-tag">Sale</p>
+                                </div>
+                                <a href="product.html">
+                                    <div class="product-description flexbox col center w-100">
+                                        <p class="product-name">ANTIQUE BLACK GOLDEN CAMBER TRINKET WALL CLOCK</p>
+                                        <p class="vendor-name">The decor shop</p>
+                                        <div class="product-prices flexbox center w-100">
+                                            <p class="old-price">Rs. 7300</p>
+                                            <p class="new-price">Rs. 6800</p>
+                                        </div>
+                                        <p class="product-savings">Save 30%</p>
+                                    </div>
+                                </a>
+                            </div>
+                    </div>
+                    <div class="item">
+                        <div class=" single-product w-100 flexbox col center">
+                            <div class="product-image-container">
+                            <a href="product.html">
+                                <img src="images/img5.webp" alt="Category Image">
+                            </a>
+                                <div class="product-image-up flexbox center">
+                                    <button onclick="productQuickView()" class="quick-view">Quick View</button>
+                                </div>
+                                <p class="product-tag">Sale</p>
+                            </div>
+                            <a href="product.html">
+                                <div class="product-description flexbox col center w-100">
+                                    <p class="product-name">ANTIQUE BLACK GOLDEN CAMBER TRINKET WALL CLOCK</p>
+                                    <p class="vendor-name">The decor shop</p>
+                                    <div class="product-prices flexbox center w-100">
+                                        <p class="old-price">Rs. 7300</p>
+                                        <p class="new-price">Rs. 6800</p>
+                                    </div>
+                                    <p class="product-savings">Save 30%</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class=" single-product w-100 flexbox col center">
+                            <div class="product-image-container">
+                                <a href="product.html">
+                                    <img src="images/img6.webp" alt="Category Image">
+                                </a>
+                                <div class="product-image-up flexbox center">
+                                    <button onclick="productQuickView()" class="quick-view">Quick View</button>
+                                </div>
+                                <p class="product-tag">Sale</p>
+                            </div>
+                            <a href="product.html">
+                                <div class="product-description flexbox col center w-100">
+                                    <p class="product-name">ANTIQUE BLACK GOLDEN CAMBER TRINKET WALL CLOCK</p>
+                                    <p class="vendor-name">The decor shop</p>
+                                    <div class="product-prices flexbox center w-100">
+                                        <p class="old-price">Rs. 7300</p>
+                                        <p class="new-price">Rs. 6800</p>
+                                    </div>
+                                    <p class="product-savings">Save 30%</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class=" single-product w-100 flexbox col center">
+                            <div class="product-image-container">
+                                <a href="product.html">
+                                    <img src="images/img1.webp" alt="Category Image">
+                                </a>
+                                <div class="product-image-up flexbox center">
+                                    <button onclick="productQuickView()" class="quick-view">Quick View</button>
+                                </div>
+                                <p class="product-tag">Sale</p>
+                            </div>
+                            <a href="product.html">
+                                <div class="product-description flexbox col center w-100">
+                                    <p class="product-name">ANTIQUE BLACK GOLDEN CAMBER TRINKET WALL CLOCK</p>
+                                    <p class="vendor-name">The decor shop</p>
+                                    <div class="product-prices flexbox center w-100">
+                                        <p class="old-price">Rs. 7300</p>
+                                        <p class="new-price">Rs. 6800</p>
+                                    </div>
+                                    <p class="product-savings">Save 30%</p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>    
             </div>
@@ -778,20 +933,22 @@
                 </div>
             </div>
         </div>
-        <div id="overlay" class="overlay flexbox center">
+        <div id="overlay" class="overlay close-overlay flexbox center">
             <div id="window" class="product-description-window flexbox ">
                 <button class="close-window" onclick="closeWindow()">X</button>
                 <div class="window-inner flexbox start-even text-left w-100">
-                    <div class="product-sub-images flexbox col">
-                        <img id="1" class="active-image" onclick="changeImage(1)" src="images/img6.webp" alt="">
-                        <img id="2" onclick="changeImage(2)" src="images/img1.webp" alt="">
-                        <img id="3" onclick="changeImage(3)" src="images/img7.webp" alt="">
-                        <img id="4" onclick="changeImage(4)" src="images/img8.webp" alt="">
-                        <img id="5" onclick="changeImage(5)" src="images/img4.webp" alt="">
-                        <img id="6" onclick="changeImage(6)" src="images/img5.webp" alt="">
+                    <div class="sub-images-container flexbox">
+                        <div class="product-sub-images flexbox col">
+                            <img id="1" class="active-image" onclick="changeImage(1)" src="images/img6.webp" alt="">
+                            <img id="2" onclick="changeImage(2)" src="images/img1.webp" alt="">
+                            <img id="3" onclick="changeImage(3)" src="images/img7.webp" alt="">
+                            <img id="4" onclick="changeImage(4)" src="images/img8.webp" alt="">
+                            <img id="5" onclick="changeImage(5)" src="images/img4.webp" alt="">
+                            <img id="6" onclick="changeImage(6)" src="images/img5.webp" alt="">
+                        </div>
                     </div>
                     <div class="product-main-image">
-                        <img id="main-image"class="main-image-inactive main-image-active "src="images/img6.webp" alt="">
+                        <img id="main-image"class="main-image-active "src="images/img6.webp" alt="">
                     </div>
                     <div class="window-product-description">
                         <div class="product-description flexbox col w-100">
@@ -946,6 +1103,11 @@
                 </div>
             </div>
         </div>
+        <script>
+            function loader(id){
+                document.getElementById(id).style.display="none";
+            }
+        </script>
         <script type="text/javascript" src="js/index.js"></script>
     </body>
 </html>

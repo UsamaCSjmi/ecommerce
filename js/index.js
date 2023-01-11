@@ -31,12 +31,16 @@ function productQuickView(){
     document.getElementById('overlay').classList.add("open");
 }
 function changeImage(id){
+    // document.getElementById("main-image").classList.remove("main-image-active");
+    // document.getElementById("main-image").style.opacity=0;
     var active=document.getElementsByClassName("active-image");
     active[0].classList.remove("active-image");
     var element=document.getElementById(id);
     element.classList.add("active-image");
     var src = element.getAttribute('src');
     document.getElementById("main-image").setAttribute('src',src);
+    // document.getElementById("main-image").classList.add("main-image-active");
+    document.getElementById("main-image").style.animation="imageChange 1s";
 }
 function decreaseQty(id){
     var qty=document.getElementById(id).value;

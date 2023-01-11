@@ -402,7 +402,7 @@ header{
     position: relative;
     width: 100%;
 }
-.product-image-container > img{
+.product-image-container  img{
     width: 100%;
 }
 .product-image-up{
@@ -478,7 +478,7 @@ header{
     width: 100vw;
     height: 100vh;
     z-index: 10;
-    transition: opacity .25s ease-in-out,transform .25s ease-in-out,background .4s ease-in-out,visibility 1s ease-in-out;
+    transition: z-index 0.1s,opacity .25s ease-in-out,transform .25s ease-in-out,background .4s ease-in-out,visibility 1s ease-in-out;
 }
 .open{
     visibility: visible;
@@ -492,7 +492,8 @@ header{
     transform: translateY(5px);
     background: none;
     opacity: 0;
-    transition: opacity .25s ease-in-out,transform .25s ease-in-out,background .4s ease-in-out,visibility 1s ease-in-out;
+    z-index: -12;
+    transition: z-index 1s,opacity .25s ease-in-out,transform .25s ease-in-out,background .4s ease-in-out,visibility 1s ease-in-out;
 }
 .product-description-window{
     position: relative;
@@ -513,26 +514,54 @@ header{
 .window-inner{
     padding: 30px;
 }
-.product-sub-images{
+.sub-images-container{
     width: 7%;
+}
+.product-sub-images{
+    width: 100%;
     
 }
 .product-sub-images > img{
     width: 100%;
     margin-bottom: 10px;
+    border: 1px solid #fff;
+    transition: all 500ms ease-in-out;
 }
 .product-main-image{
     margin-left: 10px;
     width: 40%;
 }
 .product-main-image > img{
-    width: 100%;
+    width: 100%; 
+}
+.main-image-active{
+    visibility: visible;
+    animation-name: imageChange;  
+    animation-duration: 5s;
+}
+@keyframes imageChange {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+
+}
+.main-image-inactive{
+    opacity: 0;
+    visibility: hidden;
 }
 .window-product-description{
     width: 40%;
 }
 .active-image{
-    border: 2px solid #0f0f0f;
+    border: 1px solid #0f0f0fce !important;
+    box-shadow: 5px 5px 15px #00000030;
+    transition: all 500ms ease-in-out;
 }
 .window-product-description .vendor-name{
     font-size: 16px;

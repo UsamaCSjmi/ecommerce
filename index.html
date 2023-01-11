@@ -5,12 +5,16 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">       
         <link rel="shortcut icon" href="./images/d_white.png" type="image/x-icon">
+        <link rel="stylesheet" href="./css/loaders.css">
         <link rel="stylesheet" href="./css/style.css">
         <link rel="stylesheet" href="./css/responsive.css">
         
         <title>The Decor Shop</title>
     </head>
-    <body >
+    <body onload="loader('body-loader')">
+        <div id="body-loader" class="loader">
+            <div class="site-preloader"></div>
+        </div>
         <div class="site-wrapper flexbox col center w-100">
             <div class="siteHeader w-100">
                 <div class="w-100">
@@ -547,9 +551,9 @@
                 <div class="about-us w-100 flexbox col start-even">
                     <h1 class="about-us-head">Welcome to The decor Shop</h1>
                     <div class="about-us-content">
-                        SUREKH DECOR Is An Online Retailer Of Luxury, Modern And Elegant Home Décor And Lifestyle Products. Operating From Thane, Mumbai, Maharashtra.
+                        THE DECOR SHOP Is An Online Retailer Of Luxury, Modern And Elegant Home Décor And Lifestyle Products. Operating From Moradabad and Delhi.
                         <br>
-                        Surekh Décor Philosophy Is That It Is Possible To Feature Well-Designed, Fashion-Forward, High-Quality Products At Competitive Prices. The Four Cornerstones Are : <br><br>
+                        THE DECOR SHOP Philosophy Is That It Is Possible To Feature Well-Designed, Fashion-Forward, High-Quality Products At Competitive Prices. The Four Cornerstones Are : <br><br>
                         <ul>
                             <li>
                                 Design: Well-Designed, Fashion-Forward Products For The Mass Market
@@ -565,7 +569,7 @@
                             </li>
                         </ul>
                         <br>
-                        Surekh Decor Factory Located In Bhiwandi-Mumbai. The Owners Of Company Are Shubham Patil (Co-Founder) And Umesh Shinde (Co-Founder). We Have Fully Dedicated Team Of Designers, Manufacturing Workers And Marketing. Who Are Working With Utmost Inspiration To Bring You Best Quality And Most Innovative Home Decor Products.
+                        THE DECOR SHOP Factory Located In Moradabad and Delhi. The Owners Of Company Are __________________ And ___________. We Have Fully Dedicated Team Of Designers, Manufacturing Workers And Marketing. Who Are Working With Utmost Inspiration To Bring You Best Quality And Most Innovative Home Decor Products.
                         <br><br>
                         Our Categories Include Designer Lights, Designer Paintings, Tables, Wall Clocks, Planters, Candles, Small Décor Products. 
                     </div>
@@ -656,7 +660,7 @@
             <div id="window" class="product-description-window flexbox ">
                 <button class="close-window" onclick="closeWindow()">X</button>
                 <div class="window-inner flexbox start-even text-left w-100">
-                    <div class="w-100 flexbox">
+                    <div class="sub-images-container flexbox">
                         <div class="product-sub-images flexbox col">
                             <img id="1" class="active-image" onclick="changeImage(1)" src="images/img6.webp" alt="">
                             <img id="2" onclick="changeImage(2)" src="images/img1.webp" alt="">
@@ -667,7 +671,7 @@
                         </div>
                     </div>
                     <div class="product-main-image">
-                        <img id="main-image"class="main-image-inactive main-image-active "src="images/img6.webp" alt="">
+                        <img id="main-image"class="main-image-active "src="images/img6.webp" alt="">
                     </div>
                     <div class="window-product-description">
                         <div class="product-description flexbox col w-100">
@@ -822,6 +826,11 @@
                 </div>
             </div>
         </div>
+        <script>
+            function loader(id){
+                document.getElementById(id).style.display="none";
+            }
+        </script>
         <script type="text/javascript" src="js/index.js"></script>
     </body>
 </html>
