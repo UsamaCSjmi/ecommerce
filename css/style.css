@@ -981,3 +981,58 @@ footer li{
 .cart-view .cart-head,.cart-view .cart-items,.cart-view .cart-footer{
     transform: translateY(0);
 }
+
+
+
+
+
+/* login Register Forgit Password form  */
+.form-container{
+    margin: 30px 0;
+    /* padding: 30px; */
+    width: 400px;
+    background: #fff;
+    min-height: 585px;
+    /* border: 1px solid #000; */
+    box-shadow: 0px 0px 25px 10px #00000017;
+    overflow-x: hidden;
+    border-radius: 20px;
+    position: relative;
+}
+.form-area{
+    width: 300%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transition: left 0.5s ease-in;
+}
+
+.form > h1{
+    font-size: 35px;
+    font-weight: 400;
+    margin: 30px 0 ;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+.form-control{
+    margin: 10px 0;
+    padding: 0px 30px;
+}
+.form-control > label{
+    margin: 3px 0;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+.form-control > input{
+    width: 100%;
+    border: 1px solid #00000028 ;
+    padding: 15px 5px;
+}
+.form-control > input:active,.form-control > input:focus{
+    outline: 1px solid#000;
+}
+.form-control > .btn{
+    margin: 5px 0;
+}
