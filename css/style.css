@@ -77,7 +77,7 @@ h1, .h1, h2, .h2, h3, .h3 {
 }
 .announcements{
     letter-spacing: 1px;
-    font-weight: 300;
+    font-weight: bold;
     font-size: 13px;
     display: flex;
     align-items: center;
@@ -305,7 +305,7 @@ header{
 }
 .banner{
     position:relative;
-    background-color: #0f0f0f;
+    /* background-color: #0f0f0f; */
     align-items: center;
 }
 .banner-image{
@@ -316,12 +316,13 @@ header{
 .banner-image > img{
     min-width: 100%;
     min-height: 100%;
-    opacity: 0.8;
+    opacity: 0.85;
     animation-name: zoom-out;
     animation-duration: 2s;
     animation-iteration-count: 1;
 }
 .banner-cover{
+    display: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -330,7 +331,8 @@ header{
 }
 .banner-text{
     padding: 20px 40px;
-    color: #0f0f0f;
+    font-weight: 100;
+    color: #0f0f0f9d;
     font-size: 50px;
     border: 2px solid #0f0f0f;
 }
@@ -1035,4 +1037,31 @@ footer li{
 }
 .form-control > .btn{
     margin: 5px 0;
+}
+
+.whatsapp{
+    position: fixed;
+    background: #2db742;;
+    bottom : 20px;
+    right : 20px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+.whatsapp > img{
+    width: 70%;
+    filter: invert(100%);
+    
+}
+.whatsapp:hover > img{
+    animation-name: vibrate;
+    animation-duration: 200ms;
+}
+@keyframes vibrate {
+    0%{transform: rotate(0deg)}
+    25%{transform: rotate(30deg)}
+    50%{transform: rotate(0deg)}
+    75%{transform: rotate(-30deg)}
+    100%{transform: rotate(0deg)}
+    
 }
