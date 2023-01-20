@@ -316,7 +316,7 @@ header{
 .banner-image > img{
     min-width: 100%;
     min-height: 100%;
-    opacity: 0.85;
+    /* opacity: 0.85; */
     animation-name: zoom-out;
     animation-duration: 2s;
     animation-iteration-count: 1;
@@ -1055,7 +1055,8 @@ footer li{
 }
 .whatsapp:hover > img{
     animation-name: vibrate;
-    animation-duration: 200ms;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
 }
 @keyframes vibrate {
     0%{transform: rotate(0deg)}

@@ -5,6 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">       
         <link rel="shortcut icon" href="./images/d_white.png" type="image/x-icon">
+        <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
         <link rel="stylesheet" href="./css/loaders.css">
         <link rel="stylesheet" href="./css/style.css">
         <link rel="stylesheet" href="./css/responsive.css">
@@ -277,21 +279,25 @@
                 </header>
             </div>
             <div class="site-banner-area w-100">
-                <div class="banner-slideshow">
-                    <div class="banner w-100">
-                        <div class="banner-image flexbox center w-100">
-                            <img src="images/banner/1.jpg" alt="banner">
+                <div class="banner-slideshow owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="banner w-100">
+                            <div class="banner-image flexbox center w-100">
+                                <img src="images/banner/1.jpg" alt="banner">
+                            </div>
                         </div>
                     </div>
-                    <div class="banner w-100">
-                        <div class="banner-image flexbox center w-100">
-                            <img src="images/img2.webp" alt="banner">
-                        </div>
-                        <!-- <div class="banner-cover flexbox center">
-                            <div class="banner-text">
-                                The Decor Shop
+                    <div class="item">
+                        <div class="banner w-100">
+                            <div class="banner-image flexbox center w-100">
+                                <img src="images/img2.webp" alt="banner">
                             </div>
-                        </div> -->
+                            <!-- <div class="banner-cover flexbox center">
+                                <div class="banner-text">
+                                    The Decor Shop
+                                </div>
+                            </div> -->
+                        </div>
                     </div>
                     
                 </div>
@@ -785,10 +791,31 @@
         <a href="https://wa.me/918171475514" id="wa" class="whatsapp flexbox center">
             <img src="icons/whatsapp.svg" alt="whatsapp logo">
         </a>
+        <script src="js/jquery.min.js"></script>
+        <script src="owlcarousel/owl.carousel.min.js"></script>
         <script>
             function loader(id){
                 document.getElementById(id).style.display="none";
             }
+            $('.owl-carousel').owlCarousel({
+                loop:true,
+                autoplay:true,
+                margin:10,
+                nav:true,
+                // responsive:{
+                //     0:{
+                //         items:1
+                //     },
+                //     600:{
+                //         items:3
+                //     },
+                //     1000:{
+                //         items:5
+                //     }
+                // }
+                items:1,
+                smartSpeed:1000
+            })
         </script>
         <script type="text/javascript" src="js/index.js"></script>
     </body>
